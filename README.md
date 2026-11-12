@@ -69,7 +69,7 @@ python server.py 8000
 ## 关注作者
 
 - **B 站**：<https://space.bilibili.com/43679850>
-- **抖音**：`yileinaILU77` —— <https://www.douyin.com/search/yileinaILU77>
+- **抖音**：<https://www.douyin.com/user/MS4wLjABAAAADdbUF4QPzS6_fkzaUKMl_xNvMuFBe5bx9YmdmFdMp9MLspl7UKLCelpOeEQ6IrPR>（抖音号 `yileinaILU77`）
 - **爱发电**：<https://afdian.com/a/ybsl520>
 - **站点**：<https://ybslmmd.cn/>
 
