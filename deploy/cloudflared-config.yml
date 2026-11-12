@@ -1,0 +1,17 @@
+# Cloudflare Tunnel 配置模板
+#
+# 用法：
+#   1. 把 <TUNNEL-ID> 换成 `cloudflared tunnel create mmdhub` 打印出来的 ID
+#   2. 把 mmd.example.com 换成你的域名
+#   3. 存到 %USERPROFILE%\.cloudflared\config.yml
+#
+# 说明：这个文件让 Cloudflare 把 https://mmd.example.com 转给本机 8000 端口，
+#      HTTPS 由 Cloudflare 负责，本机不用证书、不用开放端口。
+
+tunnel: <TUNNEL-ID>
+credentials-file: C:\Users\ELAINA\.cloudflared\<TUNNEL-ID>.json
+
+ingress:
+  - hostname: mmd.example.com
+    service: http://127.0.0.1:8000
+  - service: http_status:404

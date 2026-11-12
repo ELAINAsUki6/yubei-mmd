@@ -1,0 +1,18 @@
+# ---- 运行时数据（绝对不要提交）----
+# 里面是管理员口令、动态口令密钥、登录票签名密钥、百度 token、
+# 以及真实用户的账号和收藏
+data/*
+!data/.gitkeep
+
+# 本地日志 / 缓存 / 临时文件
+*.log
+__pycache__/
+*.pyc
+*.tmp
+.DS_Store
+Thumbs.db
+
+# 个人备份
+*.bak
+backup/
+!data/README.md

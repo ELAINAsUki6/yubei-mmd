@@ -1,0 +1,13 @@
+services:
+  mmdhub:
+    build: .
+    container_name: mmdhub
+    restart: unless-stopped
+    # 只绑本机，外面走 nginx 反代（要直接对外就改成 "8000:8000"）
+    ports:
+      - "127.0.0.1:8000:8000"
+    volumes:
+      # 数据必须挂出来，容器删了数据还在
+      - ./data:/app/data
+    environment:
+      - TZ=Asia/Shanghai

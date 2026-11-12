@@ -1,0 +1,2344 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>御北的小站 · 二游 MMD 模型导航</title>
+
+<meta name="description" content="按游戏分区整理二游角色的 MMD 模型配布地址（模之屋 / BowlRoll / BOOTH / pixiv 等），官方配布与同人配布分开标注，点角色直达作者本人的配布页，本站不下载、不托管任何模型文件。">
+<meta name="keywords" content="MMD模型,二游MMD,MMD配布,模型配布地址,鸣潮MMD,异环MMD,原神MMD,绝区零MMD,明日方舟MMD,崩坏星穹铁道MMD,模之屋,MMD模型去哪找">
+<meta name="author" content="ybslmmd.cn">
+<meta name="theme-color" content="#0e0f14">
+
+<!-- 分享到 QQ / 微信 / 贴吧时的卡片 -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="御北的小站">
+<meta property="og:title" content="御北的小站 · 二游 MMD 模型导航">
+<meta property="og:description" content="按游戏分区整理二游角色的 MMD 模型配布地址，官方 / 同人分开标注，点角色直达作者配布页。">
+<meta property="og:url" content="https://ybslmmd.cn/">
+<meta property="og:image" content="https://ybslmmd.cn/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="二游 MMD 模型导航">
+<meta name="twitter:description" content="按游戏分区整理二游角色的 MMD 模型配布地址，官方 / 同人分开标注。">
+<meta name="twitter:image" content="https://ybslmmd.cn/og.png">
+
+<link rel="canonical" href="https://ybslmmd.cn/">
+<meta name="baidu-site-verification" content="codeva-VAIsy3QNAU">
+<link rel="icon" type="image/png" href="/favicon.ico">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%237c6cf0'/%3E%3Ctext x='32' y='45' font-size='38' font-family='sans-serif' font-weight='bold' fill='%23fff' text-anchor='middle'%3EM%3C/text%3E%3C/svg%3E">
+<style>
+  :root{
+    --bg:#0e0f14;
+    --bg-soft:#15171f;
+    --card:#191c26;
+    --card-hover:#1f2330;
+    --line:#272b3a;
+    --text:#e8eaf2;
+    --text-dim:#9aa1b5;
+    --text-faint:#666d82;
+    --accent:#7c6cf0;
+    --accent-2:#37d0c4;
+    --warn:#e0a458;
+    --radius:14px;
+  }
+  *{box-sizing:border-box}
+  html,body{height:100%}
+  body{
+    margin:0;
+    background:
+      radial-gradient(1100px 500px at 12% -10%, rgba(124,108,240,.20), transparent 60%),
+      radial-gradient(900px 460px at 95% 0%, rgba(55,208,196,.12), transparent 55%),
+      var(--bg);
+    color:var(--text);
+    font:14px/1.6 "Microsoft YaHei UI","Segoe UI",system-ui,-apple-system,sans-serif;
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:inherit;text-decoration:none}
+  button{font:inherit;color:inherit;cursor:pointer;border:none;background:none}
+
+  /* ---------- 顶栏 ---------- */
+  header{
+    position:sticky;top:0;z-index:30;
+    backdrop-filter:blur(14px);
+    background:rgba(14,15,20,.78);
+    border-bottom:1px solid var(--line);
+  }
+  .bar{
+    max-width:1440px;margin:0 auto;padding:14px 22px;
+    display:flex;align-items:center;gap:18px;
+  }
+  .brand{display:flex;align-items:center;gap:10px;flex-shrink:0}
+  .mark{
+    width:34px;height:34px;border-radius:10px;
+    background:linear-gradient(135deg,var(--accent),var(--accent-2));
+    display:grid;place-items:center;font-weight:800;font-size:15px;color:#0d0f16;
+    box-shadow:0 6px 18px rgba(124,108,240,.35);
+  }
+  .brand h1{font-size:15.5px;margin:0;letter-spacing:.4px;display:flex;align-items:center;gap:8px}
+  .brand small{display:block;color:var(--text-faint);font-size:11px;font-weight:400;letter-spacing:0}
+  .mode{
+    font-size:10px;font-weight:600;padding:1px 7px;border-radius:99px;letter-spacing:.5px;
+    background:rgba(150,150,170,.14);color:#9aa1b5;border:1px solid rgba(150,150,170,.25);
+  }
+  .mode.on{background:rgba(60,200,140,.14);color:#7ce0b0;border-color:rgba(60,200,140,.35)}
+
+  .search{
+    flex:1;display:flex;align-items:center;gap:9px;
+    background:var(--bg-soft);border:1px solid var(--line);
+    border-radius:11px;padding:9px 13px;transition:.18s;
+  }
+  .search:focus-within{border-color:var(--accent);box-shadow:0 0 0 3px rgba(124,108,240,.16)}
+  .search svg{flex-shrink:0;color:var(--text-faint)}
+  .search input{
+    flex:1;background:none;border:none;outline:none;color:var(--text);font-size:14px;
+  }
+  .search input::placeholder{color:var(--text-faint)}
+  .kbd{
+    font-size:11px;color:var(--text-faint);border:1px solid var(--line);
+    border-radius:6px;padding:1px 6px;background:var(--card);
+  }
+
+  .toolbar-btn{
+    display:flex;align-items:center;gap:7px;
+    padding:8px 13px;border-radius:10px;border:1px solid var(--line);
+    background:var(--bg-soft);color:var(--text-dim);font-size:13px;transition:.18s;
+    white-space:nowrap;
+  }
+  .toolbar-btn:hover{color:var(--text);border-color:#3a4054;background:var(--card)}
+  .toolbar-btn.on{background:rgba(124,108,240,.16);border-color:var(--accent);color:#c9c2ff}
+
+  /* ---------- 布局 ---------- */
+  .layout{max-width:1440px;margin:0 auto;padding:20px 22px 60px;display:flex;gap:22px;align-items:flex-start}
+
+  aside{
+    width:216px;flex-shrink:0;position:sticky;top:78px;
+    border:1px solid var(--line);border-radius:var(--radius);
+    background:linear-gradient(180deg,var(--card),var(--bg-soft));
+    padding:12px;max-height:calc(100vh - 100px);overflow:auto;
+  }
+  aside::-webkit-scrollbar{width:6px}
+  aside::-webkit-scrollbar-thumb{background:#2e3346;border-radius:3px}
+  .side-title{
+    font-size:11px;letter-spacing:1.2px;color:var(--text-faint);
+    padding:4px 8px 8px;text-transform:uppercase;
+  }
+  .game{
+    display:flex;align-items:center;gap:9px;width:100%;
+    padding:9px 10px;border-radius:9px;color:var(--text-dim);
+    font-size:13.5px;transition:.15s;text-align:left;
+  }
+  .game:hover{background:var(--card-hover);color:var(--text)}
+  .game.active{background:rgba(124,108,240,.14);color:#cfc9ff;box-shadow:inset 2px 0 0 var(--accent)}
+  .dot{width:8px;height:8px;border-radius:50%;flex-shrink:0}
+  .game .count{margin-left:auto;font-size:11px;color:var(--text-faint);font-variant-numeric:tabular-nums}
+
+  main{flex:1;min-width:0}
+  .crumb{display:flex;align-items:baseline;gap:10px;margin:2px 0 16px}
+  .crumb h2{margin:0;font-size:19px;letter-spacing:.5px}
+  .crumb span{color:var(--text-faint);font-size:12.5px}
+
+  .grid{
+    display:grid;gap:9px;
+    grid-template-columns:repeat(auto-fill,minmax(156px,1fr));
+  }
+  .card{
+    position:relative;border:1px solid var(--line);border-radius:11px;
+    background:var(--card);padding:10px 11px 9px;transition:.16s;text-align:left;width:100%;
+    overflow:hidden;
+  }
+  .card::before{
+    content:"";position:absolute;inset:0 auto 0 0;width:3px;
+    background:var(--c,#3a3f52);opacity:.85;
+  }
+  .card:hover{background:var(--card-hover);border-color:#3a4054;transform:translateY(-2px);
+    box-shadow:0 10px 26px rgba(0,0,0,.35)}
+  .card-name{font-size:13.5px;font-weight:600;letter-spacing:.2px;display:flex;align-items:center;gap:6px}
+  .card-sub{margin-top:4px;font-size:11px;color:var(--text-faint);display:flex;align-items:center;gap:6px;flex-wrap:wrap}
+  .pill{
+    font-size:10.5px;padding:1px 7px;border-radius:99px;border:1px solid var(--line);
+    color:var(--text-dim);background:var(--bg-soft);
+  }
+  .pill.on{font-weight:600}
+  .pill.has{border-color:rgba(55,208,196,.4);color:#7fe6dd;background:rgba(55,208,196,.08)}
+  .pill.off{border-color:rgba(224,164,88,.45);color:#e6b877;background:rgba(224,164,88,.09)}
+
+  .seg{display:flex;background:var(--bg-soft);border:1px solid var(--line);border-radius:10px;padding:3px;gap:2px;flex-shrink:0}
+  .seg button{padding:6px 12px;border-radius:7px;font-size:12.5px;color:var(--text-dim);transition:.15s;white-space:nowrap}
+  .seg button:hover{color:var(--text)}
+  .seg button.on{background:rgba(124,108,240,.2);color:#cfc9ff}
+
+  .game-add{opacity:.72}
+  .game-add:hover{opacity:1}
+
+  /* 提交申请后的回执 */
+  .receipt{
+    margin-top:10px;padding:11px 13px;border-radius:10px;font-size:12px;line-height:1.8;
+    background:rgba(60,200,140,.10);border:1px solid rgba(60,200,140,.32);color:#8ce8bd;
+  }
+  .receipt b{color:#a8f0cc}
+
+  /* ---------- 收藏面板 ---------- */
+  .fav-folders{display:flex;flex-wrap:wrap;gap:7px;margin:2px 0 10px}
+  .fav-folder{
+    display:inline-flex;align-items:center;gap:6px;font-size:12.5px;
+    padding:6px 12px;border-radius:99px;border:1px solid var(--line);
+    background:var(--bg);color:var(--text-dim);transition:.15s;
+  }
+  .fav-folder:hover{border-color:#3a4054;color:var(--text)}
+  .fav-folder.on{border-color:rgba(224,192,74,.6);background:rgba(224,192,74,.14);color:#e6c447;font-weight:600}
+  .fav-folder .n{font-size:10.5px;opacity:.7}
+  .fav-folder.new{border-style:dashed;color:var(--text-faint)}
+  .fav-tools{display:flex;gap:7px;flex-wrap:wrap;margin-bottom:12px}
+  .fav-tools button{
+    font-size:11.5px;padding:5px 10px;border-radius:7px;border:1px solid var(--line);
+    background:var(--bg);color:var(--text-dim);
+  }
+  .fav-tools button:hover{color:var(--text);border-color:#3a4054}
+  .fav-tools button.on{border-color:rgba(224,192,74,.55);background:rgba(224,192,74,.13);color:#e6c447}
+  .fav-tools button.danger:hover{color:#ff9a9a;border-color:rgba(255,80,80,.4)}
+
+  .fav-item{
+    display:flex;align-items:center;gap:10px;padding:10px 12px;margin-bottom:8px;
+    border:1px solid var(--line);border-radius:10px;background:var(--bg-soft);
+  }
+  .fav-item:hover{border-color:#3a4054}
+  .fi-main{flex:1;min-width:0;cursor:pointer}
+  .fi-title{font-size:13px;color:var(--text);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .fi-sub{display:flex;align-items:center;gap:6px;margin-top:4px;font-size:11px;color:var(--text-faint)}
+  .fi-host{opacity:.65;font-size:10.5px}
+  .fi-open,.fi-go{
+    font-size:11.5px;color:var(--accent-2);text-decoration:none;white-space:nowrap;
+    padding:4px 9px;border-radius:7px;border:1px solid rgba(120,170,255,.28);
+  }
+  .fi-open:hover,.fi-go:hover{background:rgba(80,130,255,.14)}
+  .fi-del{
+    width:22px;height:22px;line-height:1;border-radius:50%;font-size:12px;
+    color:#6d7285;border:1px solid transparent;
+  }
+  .fi-del:hover{background:rgba(255,80,80,.16);color:#ff9a9a}
+
+  /* 地址行上的收藏星 */
+  .favstar{
+    flex-shrink:0;width:24px;height:24px;border-radius:50%;font-size:13px;line-height:1;
+    color:#6d7285;border:1px solid transparent;
+  }
+  .favstar:hover{color:#e6c447;background:rgba(224,192,74,.14)}
+  .favstar.on{color:#e6c447}
+
+  /* 登录状态 */
+  .user-btn.on{border-color:rgba(60,200,140,.45);background:rgba(60,200,140,.12);color:#8ce8bd}
+  .acct-tabs{display:flex;gap:7px;margin-bottom:12px}
+  .acct-tabs button{flex:1;padding:9px;border-radius:9px;border:1px solid var(--line);
+    background:var(--bg);color:var(--text-dim);font-size:13px}
+  .acct-tabs button.on{border-color:rgba(124,108,240,.6);background:rgba(124,108,240,.18);color:#cfc9ff;font-weight:600}
+  .acct-tip{font-size:11.5px;color:var(--text-faint);line-height:1.7;margin-top:10px}
+  .acct-warn{
+    margin-top:10px;padding:9px 12px;border-radius:9px;font-size:12px;line-height:1.65;
+    background:rgba(230,170,60,.10);border:1px solid rgba(230,170,60,.32);color:#e6c07a;
+  }
+  .acct-warn b{color:#ffd48a}
+
+  /* 页脚投喂 */
+  .donate{
+    margin-top:16px;padding:15px 16px;border-radius:12px;
+    border:1px solid rgba(224,140,170,.26);
+    background:linear-gradient(180deg, rgba(224,140,170,.10), rgba(224,140,170,.03));
+    display:flex;align-items:center;justify-content:center;gap:12px;flex-wrap:wrap;
+    font-size:13px;color:var(--text-dim);
+  }
+  .donate a{
+    display:inline-flex;align-items:center;gap:5px;
+    padding:7px 16px;border-radius:99px;text-decoration:none;
+    background:rgba(224,140,170,.18);border:1px solid rgba(224,140,170,.45);
+    color:#f2a9c1;font-weight:600;transition:.15s;
+  }
+  .donate a:hover{background:rgba(224,140,170,.32);color:#ffc4d8;transform:translateY(-1px)}
+
+  .copyright{
+    margin:14px 0 0;text-align:center;font-size:11px;line-height:1.9;
+    color:var(--text-faint);letter-spacing:.2px;
+  }
+  .copyright b{color:#9aa1b5;font-weight:600}
+
+  /* 官方 / 同人 选了才清楚 */
+  .kindpick{display:flex;gap:7px;margin-bottom:9px}
+  .kindpick button{
+    flex:1;padding:9px 6px;border-radius:9px;font-size:12.5px;
+    border:1px solid var(--line);background:var(--bg);color:var(--text-dim);transition:.15s;
+  }
+  .kindpick button:hover{border-color:#3a4054;color:var(--text)}
+  .kindpick button.on[data-k="official"]{
+    border-color:rgba(224,164,88,.65);background:rgba(224,164,88,.16);color:#eec286;font-weight:600;
+  }
+  .kindpick button.on[data-k="fan"]{
+    border-color:rgba(55,208,196,.6);background:rgba(55,208,196,.14);color:#7fe6dd;font-weight:600;
+  }
+  .fav{
+    position:absolute;top:9px;right:9px;font-size:13px;color:#3d4257;
+    padding:3px;border-radius:6px;line-height:1;
+  }
+  .fav:hover{color:#e0c04a;background:rgba(224,192,74,.12)}
+  .fav.on{color:#e6c447}
+
+  .empty{
+    border:1px dashed var(--line);border-radius:12px;padding:46px;text-align:center;
+    color:var(--text-faint);font-size:13.5px;
+  }
+
+  /* ---------- 详情抽屉 ---------- */
+  .sheet-mask{
+    position:fixed;inset:0;background:rgba(6,7,11,.62);backdrop-filter:blur(3px);
+    opacity:0;pointer-events:none;transition:.2s;z-index:40;
+  }
+  .sheet-mask.show{opacity:1;pointer-events:auto}
+  .sheet{
+    position:fixed;z-index:41;right:0;top:0;bottom:0;width:min(460px,100%);
+    background:var(--bg-soft);border-left:1px solid var(--line);
+    transform:translateX(100%);transition:transform .24s cubic-bezier(.4,0,.2,1);
+    display:flex;flex-direction:column;
+  }
+  .sheet.show{transform:none}
+  .sheet-head{padding:20px 22px 14px;border-bottom:1px solid var(--line)}
+  .sheet-head h3{margin:0;font-size:19px;letter-spacing:.5px}
+  .sheet-head p{margin:5px 0 0;color:var(--text-faint);font-size:12.5px}
+  .sheet-body{flex:1;overflow:auto;padding:16px 22px 26px}
+  .sheet-body::-webkit-scrollbar{width:6px}
+  .sheet-body::-webkit-scrollbar-thumb{background:#2e3346;border-radius:3px}
+  .close{
+    position:absolute;top:16px;right:16px;width:30px;height:30px;border-radius:8px;
+    display:grid;place-items:center;color:var(--text-faint);
+  }
+  .close:hover{background:var(--card);color:var(--text)}
+
+  .sec-title{
+    font-size:11px;letter-spacing:1.2px;color:var(--text-faint);margin:18px 0 9px;
+    text-transform:uppercase;
+  }
+  .sec-title:first-child{margin-top:0}
+
+  .link-row{
+    display:flex;align-items:center;gap:10px;padding:10px 12px;border:1px solid var(--line);
+    border-radius:10px;background:var(--card);margin-bottom:8px;transition:.15s;
+  }
+  .link-row:hover{border-color:#3a4054;background:var(--card-hover)}
+  .link-row .plat{font-size:10.5px;color:#a99cff;border:1px solid rgba(124,108,240,.35);
+    background:rgba(124,108,240,.1);border-radius:6px;padding:1px 7px;flex-shrink:0}
+  .link-row .url{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;
+    font-size:12.5px;color:var(--text-dim)}
+  .link-row .go{font-size:12px;color:var(--accent-2);flex-shrink:0}
+  .link-row .del{
+    color:#ff9a9a;font-size:12px;flex-shrink:0;padding:5px 9px;border-radius:6px;
+    border:1px solid rgba(255,90,90,.35);background:rgba(255,80,80,.1);
+  }
+  .link-row .del:hover{background:rgba(255,80,80,.22);color:#ffd0d0;border-color:rgba(255,90,90,.7)}
+
+  /* ---- 管理面板 ---- */
+  .mgr-game{border:1px solid var(--line);border-radius:11px;padding:11px 12px;margin-bottom:10px;background:var(--card)}
+  .mgr-head{display:flex;align-items:center;gap:8px;margin-bottom:9px}
+  .mgr-head .nm{font-weight:600;font-size:14px}
+  .mgr-head .ct{color:var(--text-faint);font-size:11.5px}
+  .mgr-head .rm{margin-left:auto;color:#ff9a9a;font-size:11.5px;padding:3px 8px;border-radius:6px}
+  .mgr-head .rm:hover{background:rgba(255,80,80,.14)}
+  .mgr-head .rn{color:#9cc9ff;font-size:11.5px;padding:3px 8px;border-radius:6px}
+  .mgr-head .rn:hover{background:rgba(80,130,255,.16)}
+  .mgr-head .rn + .rm{margin-left:0}
+  .chips{display:flex;flex-wrap:wrap;gap:6px}
+  .chip{
+    display:inline-flex;align-items:center;gap:6px;font-size:12px;
+    padding:3px 8px;border-radius:99px;border:1px solid var(--line);
+    background:var(--bg-soft);color:var(--text-dim);
+  }
+  .chip i{
+    font-style:normal;cursor:pointer;color:#6d7285;width:13px;height:13px;line-height:12px;
+    text-align:center;border-radius:50%;
+  }
+  .chip i:hover{background:rgba(255,80,80,.2);color:#ff9a9a}
+  .chip b.rn{
+    font-weight:400;cursor:pointer;color:#6d7285;font-size:10.5px;padding:0 2px;
+    border-radius:4px;line-height:1.4;
+  }
+  .chip b.rn:hover{background:rgba(80,130,255,.18);color:#9cc9ff}
+  .mgr-add{display:flex;gap:7px;margin-top:9px}
+  .mgr-add input{
+    flex:1;padding:6px 10px;border-radius:8px;border:1px solid var(--line);
+    background:var(--bg);color:var(--text);font-size:12.5px;outline:none;
+  }
+  .mgr-add input:focus{border-color:var(--accent)}
+  .mgr-add button{padding:6px 13px;border-radius:8px;font-size:12.5px;
+    background:rgba(124,108,240,.22);color:#cfc9ff;border:1px solid rgba(124,108,240,.4)}
+  .mgr-add button:hover{background:rgba(124,108,240,.35)}
+
+  /* ---- 待审核 ---- */
+  .pend{border:1px solid var(--line);border-radius:11px;padding:11px 12px;margin-bottom:10px;background:var(--card)}
+  .pend .t{display:flex;align-items:center;gap:8px;margin-bottom:7px;flex-wrap:wrap}
+  .pend .who{font-size:13.5px;font-weight:600}
+  .pend .tagline{font-size:11px;color:var(--text-faint)}
+  .pend .u{font-size:12px;color:#8fd7ff;word-break:break-all;line-height:1.5}
+  .pend .m{font-size:12px;color:var(--text-dim);margin-top:5px}
+  .pend .acts{display:flex;gap:8px;margin-top:10px}
+  .pend .ok{flex:1;padding:7px;border-radius:8px;font-size:12.5px;
+    background:rgba(60,200,140,.18);color:#7ce0b0;border:1px solid rgba(60,200,140,.4)}
+  .pend .ok:hover{background:rgba(60,200,140,.3)}
+  .pend .no{flex:1;padding:7px;border-radius:8px;font-size:12.5px;
+    background:rgba(255,80,80,.12);color:#ff9a9a;border:1px solid rgba(255,80,80,.3)}
+  .pend .no:hover{background:rgba(255,80,80,.24)}
+
+  .search-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+  .s-btn{
+    display:flex;align-items:center;justify-content:space-between;gap:8px;
+    padding:10px 12px;border:1px solid var(--line);border-radius:10px;
+    background:var(--card);font-size:12.5px;color:var(--text-dim);transition:.15s;
+  }
+  .s-btn:hover{border-color:var(--accent);color:#cfc9ff;background:rgba(124,108,240,.09)}
+  .s-btn span:last-child{color:var(--text-faint);font-size:11px}
+
+  .add-form{border:1px dashed var(--line);border-radius:11px;padding:12px;margin-top:10px}
+  .add-form input,.add-form select,.add-form textarea{
+    width:100%;padding:8px 10px;margin-bottom:8px;border-radius:8px;
+    border:1px solid var(--line);background:var(--bg);color:var(--text);
+    font-size:12.5px;outline:none;font-family:inherit;
+  }
+  .add-form textarea{resize:vertical;line-height:1.7;min-height:90px}
+  .add-form input:focus,.add-form select:focus,.add-form textarea:focus{border-color:var(--accent)}
+  .row{display:flex;gap:8px}
+  .btn-primary{
+    padding:9px 16px;border-radius:9px;font-size:13px;font-weight:600;
+    background:linear-gradient(135deg,var(--accent),#5f54c9);color:#fff;
+  }
+  .btn-primary:hover{filter:brightness(1.1)}
+  .btn-ghost{padding:9px 14px;border-radius:9px;font-size:13px;border:1px solid var(--line);color:var(--text-dim)}
+  .btn-ghost:hover{color:var(--text);border-color:#3a4054}
+
+  .note{
+    margin-top:14px;padding:11px 13px;border-radius:10px;font-size:12px;line-height:1.75;
+    background:rgba(224,164,88,.07);border:1px solid rgba(224,164,88,.24);color:#d8b98d;
+  }
+  .note b{color:#f0cf9d}
+
+  .toast{
+    position:fixed;left:50%;bottom:34px;transform:translate(-50%,20px);
+    background:#232838;border:1px solid #343b52;color:var(--text);
+    padding:10px 18px;border-radius:10px;font-size:13px;opacity:0;pointer-events:none;
+    transition:.22s;z-index:60;box-shadow:0 12px 34px rgba(0,0,0,.45);
+  }
+  .toast.show{opacity:1;transform:translate(-50%,0)}
+
+  footer{
+    max-width:1440px;margin:0 auto;padding:0 22px 40px;color:var(--text-faint);font-size:12px;
+    line-height:1.9;
+  }
+  footer b{color:var(--text-dim)}
+
+  @media (max-width:860px){
+    .layout{flex-direction:column;padding:14px}
+    aside{width:100%;position:static;max-height:none;display:flex;gap:6px;overflow-x:auto;padding:8px}
+    aside .side-title{display:none}
+    .game{white-space:nowrap;padding:7px 11px}
+    .game .count{display:none}
+    .bar{flex-wrap:wrap;gap:10px}
+    .search{order:3;flex-basis:100%}
+    .kbd{display:none}
+  }
+
+/* ============ 开场页 ============ */
+.landing{
+  position:fixed; inset:0; z-index:9999; display:none;
+  align-items:center; justify-content:center; overflow:hidden;
+  background:#08090d;
+  opacity:1; transition:opacity .55s ease;
+}
+.landing.show{display:flex}
+body.landing-open{overflow:hidden}
+.landing.out{opacity:0; pointer-events:none}
+
+.landing-bg{
+  position:absolute; inset:-20%;
+  background:
+    radial-gradient(46% 42% at 50% 44%, rgba(124,108,240,.34), transparent 70%),
+    radial-gradient(38% 34% at 76% 74%, rgba(60,200,140,.16), transparent 72%),
+    radial-gradient(34% 30% at 22% 26%, rgba(224,140,170,.14), transparent 72%);
+  filter:blur(6px);
+  animation:landingGlow 9s ease-in-out infinite alternate;
+}
+@keyframes landingGlow{
+  from{transform:scale(1) translateY(0)}
+  to{transform:scale(1.12) translateY(-14px)}
+}
+
+.landing-inner{position:relative; text-align:center; padding:0 24px; max-width:900px}
+
+.landing-mark{
+  width:66px; height:66px; margin:0 auto 26px; border-radius:20px;
+  background:linear-gradient(145deg,#8f7dff,#6b5ae0);
+  color:#fff; font-size:34px; font-weight:700; line-height:66px;
+  box-shadow:0 12px 40px rgba(124,108,240,.45);
+  opacity:0; animation:markIn .7s cubic-bezier(.2,.9,.3,1.5) .1s forwards;
+}
+@keyframes markIn{
+  from{opacity:0; transform:scale(.4) rotate(-14deg)}
+  to{opacity:1; transform:none}
+}
+
+.landing-title{
+  margin:0; font-size:clamp(30px,6vw,58px); font-weight:700; letter-spacing:.06em;
+  color:#f2f4fa; line-height:1.3;
+  text-shadow:0 0 34px rgba(124,108,240,.45);
+}
+.landing-title span{
+  display:inline-block; opacity:0; transform:translateY(26px) scale(.72);
+  filter:blur(8px);
+  animation:charPop .62s cubic-bezier(.2,.9,.3,1.5) forwards;
+}
+@keyframes charPop{
+  0%{opacity:0; transform:translateY(26px) scale(.72); filter:blur(8px)}
+  60%{opacity:1; filter:blur(0)}
+  100%{opacity:1; transform:translateY(0) scale(1); filter:blur(0)}
+}
+
+.landing-sub{
+  margin:22px 0 0; font-size:15px; color:#9aa1b5; letter-spacing:.08em;
+  opacity:0; animation:fadeUp .7s ease .95s forwards;
+}
+.landing-tip{
+  margin:26px 0 0; font-size:11.5px; color:#5e6478; letter-spacing:.04em;
+  opacity:0; animation:fadeUp .7s ease 1.35s forwards;
+}
+.landing-go{
+  margin-top:34px; padding:13px 34px; border-radius:99px; font-size:15px; font-weight:600;
+  color:#fff; background:linear-gradient(145deg,#8f7dff,#6b5ae0);
+  border:1px solid rgba(160,145,255,.5);
+  box-shadow:0 10px 30px rgba(124,108,240,.4);
+  opacity:0; animation:fadeUp .7s ease 1.15s forwards;
+  transition:transform .18s, box-shadow .18s;
+}
+.landing-go:hover{transform:translateY(-2px); box-shadow:0 16px 38px rgba(124,108,240,.55)}
+.landing-go span{display:inline-block; transition:transform .18s}
+.landing-go:hover span{transform:translateX(4px)}
+
+@keyframes fadeUp{
+  from{opacity:0; transform:translateY(14px)}
+  to{opacity:1; transform:none}
+}
+
+@media (max-width:520px){
+  .landing-title{font-size:clamp(26px,9vw,38px)}
+  .landing-mark{width:54px;height:54px;line-height:54px;font-size:28px;border-radius:16px}
+}
+/* ============ 更新日志 ============ */
+.log-day{
+  margin:16px 0 8px; font-size:11.5px; color:#7f8598; letter-spacing:.06em;
+  padding-bottom:6px; border-bottom:1px solid var(--line);
+}
+.log-day:first-child{margin-top:2px}
+.log-row{
+  display:flex; align-items:flex-start; gap:9px;
+  padding:7px 0; font-size:12.5px; line-height:1.65;
+}
+.log-dot{
+  flex-shrink:0; width:7px; height:7px; border-radius:50%; margin-top:6px;
+  background:#6d7285;
+}
+.log-dot.edit{background:#7c6cf0}
+.log-dot.approve{background:#3cc88c}
+.log-dot.info{background:#6d7285}
+.log-text{flex:1; color:var(--text-dim); word-break:break-word}
+.log-time{
+  flex-shrink:0; font-size:11px; color:#5e6478; font-variant-numeric:tabular-nums;
+}</style>
+</head>
+<body>
+
+<!-- 开场页 -->
+<div class="landing" id="landing" aria-hidden="true">
+  <div class="landing-bg"></div>
+  <div class="landing-inner">
+    <div class="landing-mark">M</div>
+    <h1 class="landing-title" id="landingTitle"></h1>
+    <p class="landing-sub" id="landingSub">二游 MMD 模型导航</p>
+    <button class="landing-go" id="landingGo">进入站点 <span>→</span></button>
+    <p class="landing-tip">配布地址均指向作者本人发布页 · 不下载不托管</p>
+  </div>
+</div>
+
+<header>
+  <div class="bar">
+    <div class="brand">
+      <div class="mark">M</div>
+      <div>
+        <h1>二游 MMD 模型导航 <span class="mode" id="modeBadge">…</span></h1>
+        <small>角色 → 作者配布页，不中转下载</small>
+      </div>
+    </div>
+    <label class="search">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/>
+      </svg>
+      <input id="q" type="search" placeholder="搜角色，比如：薄荷、娜娜莉、九原" autocomplete="off">
+      <span class="kbd">/</span>
+    </label>
+    <div class="seg" id="kindSeg">
+      <button data-k="all" class="on">全部</button>
+      <button data-k="official">官方</button>
+      <button data-k="fan">同人</button>
+    </div>
+    <button class="toolbar-btn" id="favBtn">
+      <span>★</span><span>收藏</span>
+    </button>
+    <button class="toolbar-btn" id="shareBtn" title="把这个站分享给别人">
+      <span>↗</span><span>分享</span>
+    </button>
+    <button class="toolbar-btn" id="editBtn">
+      <span>✎</span><span>编辑</span>
+    </button>
+    <button class="toolbar-btn" id="mgrBtn">
+      <span>⚙</span><span>管理</span>
+    </button>
+    <button class="toolbar-btn" id="reviewBtn" style="display:none">
+      <span>✓</span><span>审核<b id="pendCount" style="color:#ffd27a;margin-left:4px"></b></span>
+    </button>
+    <button class="toolbar-btn" id="logBtn" title="站点更新记录">
+      <span>☰</span><span>日志</span>
+    </button>
+    <button class="toolbar-btn user-btn" id="userBtn" title="登录后收藏可以跨设备同步">
+      <span>◕</span><span id="userLabel">登录</span>
+    </button>
+  </div>
+</header>
+
+<div class="layout">
+  <aside id="games"></aside>
+
+  <main>
+    <div class="crumb">
+      <h2 id="crumbName">全部角色</h2>
+      <span id="crumbCount"></span>
+    </div>
+    <div class="grid" id="grid"></div>
+    <div class="empty" id="empty" style="display:none">
+      没有匹配的角色。换个关键词，或者切到「全部」。
+    </div>
+  </main>
+</div>
+
+<footer>
+  <b>关于这个站</b>：这里只做索引——每个角色点开后指向的是<b>原作者</b>发布的配布页
+  （BowlRoll / BOOTH / pixiv 等），本页面不下载、不托管、不镜像任何模型文件。<br>
+  <b>使用前必读</b>：模型版权属于原厂或原作者。下载后请先看压缩包里的 <b>readme / 利用規約</b>，
+  私用、二次配布、商用、R-18 的规则各不相同，违规会被作者拉黑。二游角色模型尤其敏感，
+  公开传播前请确认授权。<br>
+  <b>链接为空</b>：配布地址需要人工确认，我没有凭空填。点角色可以用「一键搜索」去各平台找，
+  找到后点「编辑」把地址填进去，或者直接提交，审核通过后大家都能看到。<br>
+
+  <div class="donate">
+    <span>如果喜欢可以来投喂投喂大肥鱼哦！</span>
+    <a href="https://afdian.com/a/ybsl520?utm_source=copylink&amp;utm_medium=link"
+       target="_blank" rel="noopener noreferrer">爱发电 ↗</a>
+  </div>
+
+  <p class="copyright">
+    © 2026 ybslmmd.cn · 本站只做索引，地址均为人工核对后整理。<br>
+    欢迎分享本站链接；<b>禁止整站镜像、批量抓取与二次发布</b>。单独引用某条地址请注明来源。
+  </p>
+</footer>
+
+<!-- 详情 -->
+<div class="sheet-mask" id="mask"></div>
+<aside class="sheet" id="sheet" aria-hidden="true">
+  <div class="sheet-head">
+    <h3 id="sName">角色</h3>
+    <p id="sMeta"></p>
+    <button class="close" id="sClose">✕</button>
+  </div>
+  <div class="sheet-body" id="sBody"></div>
+</aside>
+
+<div class="toast" id="toast"></div>
+<input type="file" id="impFile" accept="application/json" hidden>
+
+<script>
+/* =========================================================
+   数据：游戏 → 角色。links 里放「人工确认过」的配布地址。
+   每条链接带 kind：
+     "official" = 官方配布（厂商/发行方发布的模型）
+     "fan"      = 同人配布（作者自己建模自己发）
+   没确认过的就留空，页面会给一键搜索。
+   ========================================================= */
+const DEFAULT_GAMES = [
+  { id:"nte", name:"异环", color:"#e06c9f", chars:[
+    "薄荷","娜娜莉","安魂曲","异能者·零","浔","曳尔沐","伊洛伊",
+    "真红","残虹","九原","小吱"
+  ]}
+];
+
+const LS_GAMES = "mmd-hub:games:v1";
+
+function loadGames(){
+  const saved = load(LS_GAMES, null);
+  if(Array.isArray(saved) && saved.length) return saved;
+  return structuredClone(DEFAULT_GAMES);
+}
+let GAMES = loadGames();
+function saveGames(){
+  try{ localStorage.setItem(LS_GAMES, JSON.stringify(GAMES)); }
+  catch(e){ toast("保存失败：浏览器禁用了本地存储"); }
+}
+
+const PALETTE = ["#e06c9f","#7fd0c8","#b79cf0","#8fb8e0","#e0d070","#f0a0c0","#a8b4c8","#8fc7f0"];
+
+function addGame(name){
+  name = name.trim();
+  if(!name) return "名字不能为空";
+  if(GAMES.some(g => g.name === name)) return "已经有同名分区了";
+  let id = "g" + Date.now().toString(36).slice(-5);
+  GAMES.push({ id, name, color: PALETTE[GAMES.length % PALETTE.length], chars: [] });
+  saveGames();
+  return null;
+}
+function delGame(id){
+  const i = GAMES.findIndex(g => g.id === id);
+  if(i < 0) return;
+  GAMES.splice(i, 1);
+  delete state.links[id];
+  if(state.game === id) state.game = "all";
+  save(); saveGames();
+}
+function addChar(gameId, name){
+  name = name.trim();
+  if(!name) return "名字不能为空";
+  const g = GAMES.find(x => x.id === gameId);
+  if(!g) return "分区不存在";
+  if(g.chars.includes(name)) return "这个角色已经有了";
+  g.chars.push(name);
+  saveGames();
+  return null;
+}
+function delChar(gameId, name){
+  const g = GAMES.find(x => x.id === gameId);
+  if(!g) return;
+  const i = g.chars.indexOf(name);
+  if(i >= 0) g.chars.splice(i, 1);
+  if(state.links[gameId]) delete state.links[gameId][name];
+  save(); saveGames();
+}
+function renameGame(id, newName){
+  newName = newName.trim();
+  if(!newName) return "名字不能为空";
+  const g = GAMES.find(x => x.id === id);
+  if(!g) return "分区不存在";
+  if(GAMES.some(x => x.id !== id && x.name.toLowerCase() === newName.toLowerCase()))
+    return "已经有同名分区了";
+  if(g.name === newName) return null;
+  g.name = newName;
+  saveGames();
+  return null;
+}
+function renameChar(gameId, oldName, newName){
+  newName = newName.trim();
+  if(!newName) return "名字不能为空";
+  const g = GAMES.find(x => x.id === gameId);
+  if(!g) return "分区不存在";
+  const i = g.chars.indexOf(oldName);
+  if(i < 0) return "角色不存在";
+  if(g.chars.some((c, k) => k !== i && c.toLowerCase() === newName.toLowerCase()))
+    return "这个分区里已经有同名角色了";
+  if(oldName === newName) return null;
+  g.chars[i] = newName;
+
+  // 地址跟着改名走
+  if(state.links[gameId] && state.links[gameId][oldName] !== undefined){
+    state.links[gameId][newName] = state.links[gameId][oldName];
+    delete state.links[gameId][oldName];
+  }
+  // 收藏也跟着改名走
+  const oldKey = "c:" + gameId + "/" + oldName, newKey2 = "c:" + gameId + "/" + newName;
+  for(const it of state.favData.items){
+    if(it.key === oldKey){ it.key = newKey2; it.charName = newName; }
+  }
+  if(state.user) syncFavs();
+
+  save(); saveGames();
+  return null;
+}
+
+/* 已确认的配布地址：
+   { 游戏id: { 角色名: [ {url, platform, note, kind} ] } }
+   kind: "official" | "fan"（不写默认同人） */
+const SEED_LINKS = {};
+
+const PLATFORMS = ["模之屋","BowlRoll","BOOTH","pixiv","ニコニ・コモンズ","Bilibili","GitHub","其他"];
+
+/* 各平台的一键搜索模板（都实测过能打开）
+   hint 是这个按钮右边那行小字，不写就是「搜『角色名』」 */
+const SEARCH = {
+  aplaybox: { label:"模之屋",   url:() => `https://www.aplaybox.com/`, hint:"去首页搜" },
+  bowlroll: { label:"BowlRoll", url:q => `https://bowlroll.net/file/index?keyword=${encodeURIComponent(q)}` },
+  booth:    { label:"BOOTH",    url:q => `https://booth.pm/ja/search/${encodeURIComponent(q)}` },
+  pixiv:    { label:"pixiv",    url:q => `https://www.pixiv.net/tags/${encodeURIComponent(q)}` },
+  nico:     { label:"ニコニコ",  url:q => `https://www.nicovideo.jp/tag/${encodeURIComponent(q + " MMD")}` },
+  bili:     { label:"B站",      url:q => `https://search.bilibili.com/all?keyword=${encodeURIComponent(q + " MMD 模型 配布")}` },
+  bing:     { label:"必应站内搜", url:q => `https://www.bing.com/search?q=${encodeURIComponent("site:bowlroll.net " + q)}` },
+};
+
+/* =========================================================
+   状态
+   ========================================================= */
+const LS_LINKS = "mmd-hub:links:v1";
+const LS_FAV   = "mmd-hub:fav:v2";
+const LS_FAV_OLD = "mmd-hub:fav:v1";
+const LS_UTOK  = "mmd-hub:utoken";
+
+let seenFavHint = false;
+
+/* 收藏结构：{ folders:[{id,name}], items:[{key,type,folder,...}] }
+   key：角色 = "c:游戏id/角色名" ／ 地址 = "l:完整url" */
+function loadFavs(){
+  const v2 = load(LS_FAV, null);
+  if(v2 && Array.isArray(v2.items) && Array.isArray(v2.folders)) return v2;
+  // 老版本存的是 ["nte/薄荷", ...]，自动升级
+  const v1 = load(LS_FAV_OLD, null);
+  if(Array.isArray(v1)){
+    const items = v1.filter(k => typeof k === "string" && k.includes("/")).map(k => {
+      const i = k.indexOf("/");
+      return { key: "c:" + k, type: "char", folder: "default",
+               gameId: k.slice(0, i), charName: k.slice(i + 1) };
+    });
+    return { folders: [{ id: "default", name: "默认收藏" }], items };
+  }
+  return { folders: [{ id: "default", name: "默认收藏" }], items: [] };
+}
+
+const state = {
+  game: "all",
+  q: "",
+  kind: "all",          // all | official | fan
+  favOnly: false,
+  edit: false,
+  lastKind: "fan",      // 上次选的官方/同人，下次默认沿用
+  links: load(LS_LINKS, structuredClone(SEED_LINKS)),
+  favData: loadFavs(),
+  favFolder: "",        // 收藏面板当前打开哪个收藏夹
+  user: "",             // 登录的用户名，空 = 没登录
+  utoken: localStorage.getItem(LS_UTOK) || "",
+  acctTab: "login",     // login | register
+  favSyncing: false,
+  receipt: "",          // 提交申请后的回执文案
+  receiptId: "",
+};
+
+/* ---------- 收藏小工具 ---------- */
+function hostOf(url){
+  try{ return new URL(url).hostname.replace(/^www\./, ""); }catch(e){ return ""; }
+}
+
+function favFolderId(){
+  const list = state.favData.folders;
+  if(state.favFolder && list.some(f => f.id === state.favFolder)) return state.favFolder;
+  return list[0] ? list[0].id : "default";
+}
+function isCharFav(gid, name){
+  return state.favData.items.some(it => it.key === "c:" + gid + "/" + name);
+}
+function isLinkFav(url){
+  return state.favData.items.some(it => it.key === "l:" + url);
+}
+function addFav(item){
+  if(!state.favData.items.some(x => x.key === item.key)) state.favData.items.push(item);
+}
+function removeFav(key){
+  state.favData.items = state.favData.items.filter(x => x.key !== key);
+}
+function toggleCharFav(gid, name){
+  const key = "c:" + gid + "/" + name;
+  if(isCharFav(gid, name)){ removeFav(key); return false; }
+  addFav({ key, type: "char", folder: favFolderId(), gameId: gid, charName: name });
+  return true;
+}
+function toggleLinkFav(g, charName, link){
+  const key = "l:" + link.url;
+  if(isLinkFav(link.url)){ removeFav(key); return false; }
+  addFav({
+    key, type: "link", folder: favFolderId(), url: link.url,
+    gameId: g.id, charName, platform: link.platform || "",
+    kind: link.kind || "fan", note: link.note || "",
+  });
+  return true;
+}
+
+function load(key, fallback){
+  try{
+    const raw = localStorage.getItem(key);
+    return raw ? JSON.parse(raw) : fallback;
+  }catch(e){ return fallback; }
+}
+function save(){
+  try{
+    localStorage.setItem(LS_LINKS, JSON.stringify(state.links));
+    localStorage.setItem(LS_FAV, JSON.stringify(state.favData));
+  }catch(e){ toast("保存失败：浏览器禁用了本地存储"); }
+}
+
+function linksOf(gameId, name){
+  return (state.links[gameId] && state.links[gameId][name]) || [];
+}
+
+/* =========================================================
+   用户账号：注册 / 登录 / 收藏同步
+   ========================================================= */
+async function accountMe(){
+  if(!state.utoken) return;
+  try{
+    const r = await fetch("api/account/me", { headers: { "X-User-Token": state.utoken }, cache: "no-store" });
+    const j = await r.json();
+    if(j.username){
+      state.user = j.username;
+      mergeFavs(j.favs);
+      syncFavs();
+    }else{
+      state.utoken = ""; state.user = "";
+      localStorage.removeItem(LS_UTOK);
+    }
+  }catch(e){ /* 离线时忽略，按本地收藏走 */ }
+  renderUserBtn();
+}
+
+/* 把服务器上的收藏并进本地：按 id 补收藏夹，按 key 补条目 */
+function mergeFavs(remote){
+  if(!remote || !Array.isArray(remote.items)) return;
+  const have = new Set(state.favData.folders.map(f => f.id));
+  for(const f of (remote.folders || [])){
+    if(f && f.id && !have.has(f.id)){
+      state.favData.folders.push({ id: f.id, name: f.name || "收藏夹" });
+      have.add(f.id);
+    }
+  }
+  const keys = new Set(state.favData.items.map(i => i.key));
+  for(const it of remote.items){
+    if(it && it.key && !keys.has(it.key)){
+      state.favData.items.push(it);
+      keys.add(it.key);
+    }
+  }
+  save();
+}
+
+function renderUserBtn(){
+  const btn = $("#userBtn"), label = $("#userLabel");
+  if(state.user){
+    label.textContent = state.user;
+    btn.classList.add("on");
+    btn.title = `已登录：${state.user}\n收藏会同步到服务器`;
+  }else{
+    label.textContent = "登录";
+    btn.classList.remove("on");
+    btn.title = "登录后收藏可以跨设备同步";
+  }
+}
+
+async function syncFavs(){
+  if(!state.user || !state.utoken || state.favSyncing) return;
+  state.favSyncing = true;
+  try{
+    await fetch("api/account/favs", {
+      method: "POST",
+      headers: { "Content-Type": "application/json", "X-User-Token": state.utoken },
+      body: JSON.stringify({ favs: state.favData }),
+    });
+  }catch(e){ /* 静默失败，下次操作再同步 */ }
+  state.favSyncing = false;
+}
+
+function logout(){
+  state.user = ""; state.utoken = "";
+  localStorage.removeItem(LS_UTOK);
+  renderUserBtn();
+  toast("已退出登录，收藏回到本机");
+  if(sheetMode === "account") renderSheet();
+}
+
+/* =========================================================
+   官方/同人 选择器：两个按钮，比下拉框显眼，而且会记住上次选的
+   ========================================================= */
+function kindPickerHTML(id){
+  const cur = state.lastKind || "fan";
+  const btn = (k, label) =>
+    `<button type="button" data-k="${k}" class="${k === cur ? "on" : ""}">${label}</button>`;
+  return `<div class="kindpick" id="${id}">${btn("official", "官方配布")}${btn("fan", "同人配布")}</div>`;
+}
+
+function wireKindPicker(root, id){
+  const el = root.querySelector("#" + id);
+  if(!el) return () => "fan";
+  el.addEventListener("click", e => {
+    const b = e.target.closest("button[data-k]");
+    if(!b) return;
+    [...el.children].forEach(x => x.classList.toggle("on", x === b));
+    state.lastKind = b.dataset.k;
+  });
+  return () => {
+    const on = el.querySelector("button.on");
+    return on ? on.dataset.k : "fan";
+  };
+}
+function addLink(gameId, name, item){
+  state.links[gameId] = state.links[gameId] || {};
+  state.links[gameId][name] = state.links[gameId][name] || [];
+  state.links[gameId][name].push(item);
+  save();
+}
+function delLink(gameId, name, idx){
+  const arr = linksOf(gameId, name);
+  arr.splice(idx, 1);
+  if(!arr.length) delete state.links[gameId][name];
+  save();
+}
+
+/* =========================================================
+   渲染
+   ========================================================= */
+const $ = s => document.querySelector(s);
+const gamesEl = $("#games"), gridEl = $("#grid");
+
+function renderGames(){
+  const total = GAMES.reduce((n,g)=>n+g.chars.length,0);
+  gamesEl.innerHTML = `<div class="side-title">游戏</div>`;
+  gamesEl.appendChild(makeGame("all","全部角色",total,"#7c6cf0"));
+  for(const g of GAMES) gamesEl.appendChild(makeGame(g.id,g.name,g.chars.length,g.color));
+}
+function makeGame(id, name, count, color){
+  const b = document.createElement("button");
+  b.className = "game" + (state.game===id ? " active":"");
+  b.innerHTML = `<span class="dot" style="background:${color}"></span>
+                 <span>${name}</span><span class="count">${count}</span>`;
+  b.onclick = ()=>{ state.game = id; renderGames(); renderGrid(); };
+  return b;
+}
+
+function match(name, game){
+  const q = state.q.trim().toLowerCase();
+  if(!q) return true;
+  return name.toLowerCase().includes(q) || game.name.toLowerCase().includes(q);
+}
+
+function renderGrid(){
+  const list = [];
+  for(const g of GAMES){
+    if(state.game !== "all" && state.game !== g.id) continue;
+    for(const name of g.chars){
+      if(!match(name,g)) continue;
+      if(state.favOnly && !isCharFav(g.id, name)) continue;
+      const arr = linksOf(g.id, name);
+      const nOff = arr.filter(l => (l.kind||"fan") === "official").length;
+      const nFan = arr.length - nOff;
+      if(state.kind === "official" && nOff === 0) continue;
+      if(state.kind === "fan" && nFan === 0) continue;
+      list.push({g, name, nOff, nFan});
+    }
+  }
+  const cur = GAMES.find(g=>g.id===state.game);
+  $("#crumbName").textContent = cur ? cur.name : "全部角色";
+  $("#crumbCount").textContent = `${list.length} 个角色`;
+
+  gridEl.innerHTML = "";
+  $("#empty").style.display = list.length ? "none" : "block";
+
+  const frag = document.createDocumentFragment();
+  for(const {g,name,nOff,nFan} of list){
+    const card = document.createElement("button");
+    card.className = "card";
+    card.style.setProperty("--c", g.color);
+    const pills = [];
+    if(nOff) pills.push(`<span class="pill off on">官方 ${nOff}</span>`);
+    if(nFan) pills.push(`<span class="pill has on">同人 ${nFan}</span>`);
+    if(!pills.length) pills.push(`<span class="pill" style="opacity:.55">去搜 ↗</span>`);
+    card.innerHTML = `
+      <div class="card-name">${name}</div>
+      <div class="card-sub"><span>${g.name}</span>${pills.join("")}</div>
+      <span class="fav ${isCharFav(g.id, name)?"on":""}" title="收藏这个角色">★</span>`;
+    card.querySelector(".fav").onclick = ev => {
+      ev.stopPropagation();
+      toggleCharFav(g.id, name);
+      save(); renderGrid();
+      if(state.user) syncFavs();
+      else if(SERVER.on && !seenFavHint){
+        seenFavHint = true;
+        toast("收藏只存在这台设备，点右上「登录」可以跨设备同步");
+      }
+    };
+    card.onclick = ()=> openSheet(g, name);
+    frag.appendChild(card);
+  }
+  gridEl.appendChild(frag);
+}
+
+/* =========================================================
+   详情抽屉
+   ========================================================= */
+let current = null;
+let sheetMode = "char";        // char | manage
+
+function openSheet(game, name){
+  sheetMode = "char";
+  current = {game, name};
+  renderSheet();
+  $("#mask").classList.add("show");
+  $("#sheet").classList.add("show");
+  try{ history.replaceState(null, "", `#${game.id}/${encodeURIComponent(name)}`); }catch(e){}
+}
+
+function openManage(){
+  sheetMode = "manage";
+  current = null;
+  $("#sName").textContent = "管理";
+  renderSheet();
+  $("#mask").classList.add("show");
+  $("#sheet").classList.add("show");
+  try{ history.replaceState(null, "", location.pathname + location.search + "#manage"); }catch(e){}
+}
+function closeSheet(){
+  $("#mask").classList.remove("show");
+  $("#sheet").classList.remove("show");
+  current = null;
+  try{ history.replaceState(null, "", location.pathname + location.search); }catch(e){}
+}
+$("#mask").onclick = closeSheet;
+$("#sClose").onclick = closeSheet;
+
+function renderSheet(){
+  if(sheetMode === "review") return renderPending();
+  if(sheetMode === "log") return renderLog();
+  if(sheetMode === "fav") return renderFav();
+  if(sheetMode === "account") return renderAccount();
+  if(sheetMode === "manage") return renderManage();
+  if(!current) return;
+  const {game, name} = current;
+  const links = linksOf(game.id, name);
+  const body = $("#sBody");
+  body.innerHTML = "";
+
+  // 标题和副标题每次重绘都刷新（之前只写在 openSheet 里，加完地址还显示 0/0）
+  const nOff0 = links.filter(l => (l.kind || "fan") === "official").length;
+  $("#sName").textContent = name;
+  $("#sMeta").textContent = `${game.name} · 官方 ${nOff0} ／ 同人 ${links.length - nOff0}`;
+
+  const KINDS = [
+    { key:"official", title:"官方配布", hint:"厂商 / 发行方发布，多在模之屋" },
+    { key:"fan",      title:"同人配布", hint:"作者自己建模、自己发布" },
+  ];
+
+  for(const k of KINDS){
+    const arr = links
+      .map((l, idx) => ({l, idx}))
+      .filter(({l}) => (l.kind || "fan") === k.key);
+
+    body.insertAdjacentHTML("beforeend",
+      `<div class="sec-title">${k.title}<span style="text-transform:none;letter-spacing:0;margin-left:8px;opacity:.7">${k.hint}</span></div>`);
+
+    if(!arr.length){
+      body.insertAdjacentHTML("beforeend",
+        `<div style="font-size:12.5px;color:var(--text-faint);padding:0 0 8px">还没有记录。</div>`);
+    }
+
+    for(const {l, idx} of arr){
+      const row = document.createElement("div");
+      row.className = "link-row";
+      row.innerHTML = `
+        <span class="plat">${l.platform || "链接"}</span>
+        <a class="url" href="${l.url}" target="_blank" rel="noopener noreferrer">${l.note || l.url}</a>
+        <a class="go" href="${l.url}" target="_blank" rel="noopener noreferrer">打开 ↗</a>`;
+
+      // 每条地址都能单独收藏
+      const star = document.createElement("button");
+      star.className = "favstar" + (isLinkFav(l.url) ? " on" : "");
+      star.textContent = isLinkFav(l.url) ? "★" : "☆";
+      star.title = isLinkFav(l.url) ? "已收藏这条地址" : "收藏这条地址";
+      star.onclick = () => {
+        const added = toggleLinkFav(game, name, l);
+        save();
+        star.textContent = added ? "★" : "☆";
+        star.classList.toggle("on", added);
+        star.title = added ? "已收藏这条地址" : "收藏这条地址";
+        if(state.user) syncFavs();
+        toast(added ? "已收藏这条地址" : "已取消收藏");
+      };
+      row.appendChild(star);
+      if(state.edit && !SERVER.on){
+        const del = document.createElement("button");
+        del.className = "del"; del.textContent = "删除";
+        del.onclick = ()=>{
+          if(confirm(`删除这条地址？\n${l.url}`)){ delLink(game.id, name, idx); renderSheet(); renderGrid(); }
+        };
+        row.appendChild(del);
+      }else if(state.edit && SERVER.on){
+        // 服务器模式：站长可以改类型、删掉填错的
+        const wrap = document.createElement("span");
+        wrap.style.cssText = "display:flex;gap:6px;flex-shrink:0";
+        const isOff = (l.kind || "fan") === "official";
+        const flip = document.createElement("button");
+        flip.className = "del";
+        flip.style.cssText = "color:#9cc9ff;background:rgba(80,130,255,.12);border-color:rgba(120,170,255,.4)";
+        flip.textContent = isOff ? "改为同人" : "改为官方";
+        flip.onclick = async () => {
+          const r = await mutate("set_link_kind", {
+            gameId: game.id, charName: name, url: l.url,
+            kind: isOff ? "fan" : "official",
+          });
+          if(r.error) toast(r.error);
+          else { renderSheet(); renderGrid(); toast("已修改"); }
+        };
+        const del = document.createElement("button");
+        del.className = "del"; del.textContent = "删除";
+        del.onclick = async () => {
+          if(!confirm(`从线上删掉这条？\n${l.url}`)) return;
+          const r = await mutate("del_link", { gameId: game.id, charName: name, url: l.url });
+          if(r.error) toast(r.error);
+          else { renderSheet(); renderGrid(); toast("已删除"); }
+        };
+        wrap.append(flip, del);
+        row.appendChild(wrap);
+      }
+      body.appendChild(row);
+    }
+  }
+
+  /* --- 一键搜索 --- */
+  body.insertAdjacentHTML("beforeend", `<div class="sec-title">去平台找（新窗口）</div>
+    <div class="search-grid" id="sg"></div>`);
+  const sg = body.querySelector("#sg");
+  for(const key in SEARCH){
+    const s = SEARCH[key];
+    const b = document.createElement("a");
+    b.className = "s-btn";
+    b.href = s.url(name);
+    b.target = "_blank"; b.rel = "noopener noreferrer";
+    b.innerHTML = `<span>${s.label}</span><span>${s.hint || `搜「${name}」`} ↗</span>`;
+    sg.appendChild(b);
+  }
+
+  /* --- 服务器模式：提交给站长审核 --- */
+  if(SERVER.on){
+    body.insertAdjacentHTML("beforeend", `
+      <div class="sec-title">提交一条配布地址</div>
+      <div class="add-form">
+        ${kindPickerHTML("sKind")}
+        <input id="sUrl" placeholder="配布页地址，https://www.aplaybox.com/... 或 bowlroll…">
+        <select id="sPlat">${PLATFORMS.map(p=>`<option>${p}</option>`).join("")}</select>
+        <input id="sNote" placeholder="备注：作者名 / 免费 / 限私用 …">
+        <input id="sWho" placeholder="你的昵称（可留空）">
+        <div class="row">
+          <button class="btn-primary" id="sSubmit">提交审核</button>
+        </div>
+      </div>
+      <div style="font-size:11.5px;color:var(--text-faint);margin-top:-2px">
+        提交后要等站长在「审核」里点通过，才会出现在所有人看到的页面上。
+      </div>`);
+    const readKind = wireKindPicker(body, "sKind");
+    body.querySelector("#sSubmit").onclick = async () => {
+      const btn = body.querySelector("#sSubmit");
+      const payload = {
+        gameId: game.id, charName: name,
+        url: body.querySelector("#sUrl").value.trim(),
+        platform: body.querySelector("#sPlat").value,
+        linkKind: readKind(),
+        note: body.querySelector("#sNote").value.trim(),
+        submitter: body.querySelector("#sWho").value.trim(),
+      };
+      if(!/^https?:\/\//i.test(payload.url)){ toast("地址要以 http:// 或 https:// 开头"); return; }
+      btn.disabled = true; btn.textContent = "提交中…";
+      try{
+        const r = await fetch("api/submit", {
+          method:"POST", headers:{"Content-Type":"application/json"},
+          body: JSON.stringify(payload),
+        });
+        const j = await r.json().catch(()=>({}));
+        if(!r.ok){ toast(j.error || ("提交失败 " + r.status)); }
+        else{
+          toast(j.message || "已提交，等站长审核");
+          body.querySelector("#sUrl").value = "";
+          body.querySelector("#sNote").value = "";
+        }
+      }catch(e){
+        toast("连不上服务器");
+      }finally{
+        btn.disabled = false; btn.textContent = "提交审核";
+      }
+    };
+  }
+
+  /* --- 本地模式：直接编辑 --- */
+  if(state.edit && !SERVER.on){
+    body.insertAdjacentHTML("beforeend", `
+      <div class="sec-title">添加配布地址</div>
+      <div class="add-form">
+        ${kindPickerHTML("fKind")}
+        <input id="fUrl" placeholder="配布页完整地址，https://www.aplaybox.com/... 或 bowlroll…">
+        <select id="fPlat">${PLATFORMS.map(p=>`<option>${p}</option>`).join("")}</select>
+        <input id="fNote" placeholder="备注（可选）：作者名 / 免费 / 限私用 …">
+        <div class="row">
+          <button class="btn-primary" id="fAdd">保存</button>
+          <button class="btn-ghost" id="fCancel">取消</button>
+        </div>
+      </div>`);
+    const readKind = wireKindPicker(body, "fKind");
+    body.querySelector("#fAdd").onclick = ()=>{
+      const url = body.querySelector("#fUrl").value.trim();
+      if(!/^https?:\/\//i.test(url)){ toast("地址要以 http:// 或 https:// 开头"); return; }
+      addLink(game.id, name, {
+        url,
+        kind: readKind(),
+        platform: body.querySelector("#fPlat").value,
+        note: body.querySelector("#fNote").value.trim(),
+      });
+      renderSheet(); renderGrid(); toast("已保存到本地");
+    };
+    body.querySelector("#fCancel").onclick = ()=>{ state.edit=false; syncEditBtn(); renderSheet(); };
+  }
+
+  body.insertAdjacentHTML("beforeend", `
+    <div class="note">
+      <b>官方和同人的授权差很远。</b>官方配布通常是「允许个人作品使用、禁止商用和二次配布」；
+      同人模型则看作者个人规约，有的连改模都要申请。下载后先读压缩包里的
+      readme / 利用規約，二游角色还叠加了游戏厂商的版权。
+    </div>`);
+}
+
+/* =========================================================
+   更新日志
+   ========================================================= */
+async function openLog(){
+  sheetMode = "log";
+  current = null;
+  $("#mask").classList.add("show");
+  $("#sheet").classList.add("show");
+  await renderLog();
+}
+
+async function renderLog(){
+  const body = $("#sBody");
+  body.innerHTML = "";
+  $("#sName").textContent = "更新日志";
+
+  let events = [];
+  try{
+    const r = await fetch("api/events?limit=100", {cache: "no-store"});
+    const j = await r.json();
+    events = j.events || [];
+  }catch(e){
+    $("#sMeta").textContent = "加载失败";
+    body.innerHTML = `<div style="color:#ff9a9a;font-size:13px">连不上服务器</div>`;
+    return;
+  }
+
+  $("#sMeta").textContent = `${events.length} 条记录`;
+  if(!events.length){
+    body.innerHTML = `<div style="color:var(--text-faint);font-size:13px;line-height:1.9;padding:8px 0">
+      还没有记录。<br>之后你在「管理」里加分区、加角色、加地址，或者审核通过别人的提交，
+      这里会自动记一条。</div>`;
+    return;
+  }
+
+  let lastDay = "";
+  for(const ev of events){
+    const ts = String(ev.ts || "");
+    const day = ts.slice(0, 10);
+    const time = ts.slice(11, 16);
+    if(day !== lastDay){
+      lastDay = day;
+      const d = document.createElement("div");
+      d.className = "log-day";
+      d.textContent = day;
+      body.appendChild(d);
+    }
+    const row = document.createElement("div");
+    row.className = "log-row";
+
+    const dot = document.createElement("span");
+    dot.className = "log-dot " + (ev.kind || "info");
+
+    const text = document.createElement("span");
+    text.className = "log-text";
+    text.textContent = ev.text || "";       // 用 textContent，防止名字里带 HTML
+
+    const tm = document.createElement("span");
+    tm.className = "log-time";
+    tm.textContent = time;
+
+    row.append(dot, text, tm);
+    body.appendChild(row);
+  }
+}
+
+$("#logBtn").onclick = () => openLog();
+
+/* =========================================================
+   收藏面板：收藏夹 + 收藏的角色 / 配布地址
+   ========================================================= */
+function openFav(){
+  sheetMode = "fav";
+  current = null;
+  $("#mask").classList.add("show");
+  $("#sheet").classList.add("show");
+  renderFav();
+}
+
+function renderFav(){
+  const body = $("#sBody");
+  body.innerHTML = "";
+  const folders = state.favData.folders;
+  const fid = favFolderId();
+  const items = state.favData.items;
+  const shown = items.filter(it => it.folder === fid);
+
+  $("#sName").textContent = "我的收藏";
+  $("#sMeta").textContent = `${items.length} 条 · ${folders.length} 个收藏夹`
+    + (state.user ? ` · ${state.user} 已同步` : " · 未登录（只在本机）");
+
+  const chips = folders.map(f => {
+    const n = items.filter(x => x.folder === f.id).length;
+    return `<button class="fav-folder ${f.id === fid ? "on" : ""}" data-f="${f.id}">
+              ${f.name}<span class="n">${n}</span></button>`;
+  }).join("");
+  body.insertAdjacentHTML("beforeend", `
+    <div class="fav-folders" id="favFolders">
+      ${chips}
+      <button class="fav-folder new" id="favNew">＋ 新建</button>
+    </div>
+    <div class="fav-tools">
+      <button id="favRename">重命名</button>
+      ${folders.length > 1 ? `<button id="favDel" class="danger">删除收藏夹</button>` : ""}
+      <button id="favAll" class="${state.favOnly ? "on" : ""}">
+        ${state.favOnly ? "✓ 首页只看收藏" : "首页只看收藏"}
+      </button>
+    </div>`);
+
+  body.querySelector("#favFolders").addEventListener("click", e => {
+    const b = e.target.closest("button[data-f]");
+    if(!b) return;
+    state.favFolder = b.dataset.f;
+    renderFav();
+  });
+
+  body.querySelector("#favNew").onclick = () => {
+    const name = prompt("新收藏夹的名字：");
+    if(!name || !name.trim()) return;
+    const id = "f" + Date.now().toString(36).slice(-5);
+    state.favData.folders.push({ id, name: name.trim().slice(0, 20) });
+    state.favFolder = id;
+    save(); if(state.user) syncFavs();
+    renderFav(); toast("收藏夹已创建");
+  };
+
+  body.querySelector("#favRename").onclick = () => {
+    const cur = folders.find(f => f.id === fid);
+    if(!cur) return;
+    const name = prompt("把收藏夹改名成：", cur.name);
+    if(!name || !name.trim()) return;
+    cur.name = name.trim().slice(0, 20);
+    save(); if(state.user) syncFavs();
+    renderFav(); toast("已改名");
+  };
+
+  const delBtn = body.querySelector("#favDel");
+  if(delBtn){
+    delBtn.onclick = () => {
+      if(folders.length <= 1) return;
+      const cur = folders.find(f => f.id === fid);
+      if(!confirm(`删除收藏夹「${cur.name}」？里面的 ${shown.length} 条收藏也会删掉。`)) return;
+      state.favData.folders = folders.filter(f => f.id !== fid);
+      state.favData.items = items.filter(it => it.folder !== fid);
+      state.favFolder = state.favData.folders[0].id;
+      save(); if(state.user) syncFavs();
+      renderFav(); toast("收藏夹已删除");
+    };
+  }
+
+  body.querySelector("#favAll").onclick = () => {
+    state.favOnly = !state.favOnly;
+    $("#favBtn").classList.toggle("on", state.favOnly);
+    renderGrid(); renderFav();
+  };
+
+  body.insertAdjacentHTML("beforeend", `<div class="sec-title">${shown.length} 条收藏</div>`);
+  if(!shown.length){
+    body.insertAdjacentHTML("beforeend", `
+      <div style="font-size:12.5px;color:var(--text-faint);line-height:1.9;padding:6px 0">
+        这个收藏夹还是空的。<br>
+        · 角色卡片右上角的 <b style="color:#e6c447">★</b> 收藏角色<br>
+        · 角色详情里每条地址右边的 <b style="color:#e6c447">☆</b> 收藏地址
+      </div>`);
+    return;
+  }
+
+  for(const it of shown){
+    const row = document.createElement("div");
+    row.className = "fav-item";
+    if(it.type === "link"){
+      row.innerHTML = `
+        <div class="fi-main">
+          <div class="fi-title">${it.note || hostOf(it.url) || it.url}</div>
+          <div class="fi-sub">
+            <span class="pill ${it.kind === "official" ? "off" : "has"}">${it.kind === "official" ? "官方" : "同人"}</span>
+            <span>${it.platform || "链接"}</span>
+            ${it.charName ? `<span>· ${it.charName}</span>` : ""}
+            <span class="fi-host">${hostOf(it.url)}</span>
+          </div>
+        </div>
+        <a class="fi-open" href="${it.url}" target="_blank" rel="noopener noreferrer">打开 ↗</a>
+        <button class="fi-del" title="取消收藏">✕</button>`;
+      row.querySelector(".fi-open").onclick = e => e.stopPropagation();
+      row.querySelector(".fi-del").onclick = e => {
+        e.stopPropagation();
+        removeFav(it.key); save(); if(state.user) syncFavs();
+        renderFav(); renderGrid(); toast("已取消收藏");
+      };
+    }else{
+      const g = GAMES.find(x => x.id === it.gameId);
+      const arr = linksOf(it.gameId, it.charName);
+      row.innerHTML = `
+        <div class="fi-main">
+          <div class="fi-title">${it.charName || "?"}</div>
+          <div class="fi-sub">
+            <span>${g ? g.name : it.gameId}</span>
+            <span>· ${arr.length} 条地址</span>
+          </div>
+        </div>
+        <span class="fi-go">查看 →</span>
+        <button class="fi-del" title="取消收藏">✕</button>`;
+      row.onclick = () => { if(g) openSheet(g, it.charName); };
+      row.querySelector(".fi-del").onclick = e => {
+        e.stopPropagation();
+        removeFav(it.key); save(); if(state.user) syncFavs();
+        renderFav(); renderGrid(); toast("已取消收藏");
+      };
+    }
+    body.appendChild(row);
+  }
+}
+
+/* =========================================================
+   提交申请（给非管理员用，走 /api/submit 进审核队列）
+   ========================================================= */
+async function submitApplication(payload){
+  try{
+    const r = await fetch("api/submit", {
+      method: "POST", headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ ...payload, submitter: state.user || "" }),
+    });
+    const j = await r.json().catch(() => ({}));
+    if(!r.ok) return { error: j.error || "提交失败" };
+    return { ok: true, id: j.id };
+  }catch(e){
+    return { error: "连不上服务器" };
+  }
+}
+
+/* =========================================================
+   账号面板：登录 / 注册 / 退出
+   ========================================================= */
+function renderAccount(){
+  const body = $("#sBody");
+  body.innerHTML = "";
+
+  if(state.user){
+    $("#sName").textContent = "我的账号";
+    $("#sMeta").textContent = `${state.favData.items.length} 个收藏 · 已同步`;
+    body.insertAdjacentHTML("beforeend", `
+      <div class="add-form">
+        <div style="display:flex;align-items:center;gap:9px">
+          <span style="font-size:15.5px;font-weight:600">${state.user}</span>
+          <span class="pill has on">已登录</span>
+        </div>
+        <div style="font-size:12.5px;color:var(--text-dim);line-height:1.9">
+          收藏跟着账号走，换手机、换浏览器都还在。<br>
+          当前收藏：<b>${state.favData.items.length}</b> 个
+        </div>
+        <div class="row" style="margin-top:10px">
+          <button class="btn-ghost" id="acctLogout">退出登录</button>
+        </div>
+      </div>
+      <div class="acct-tip">退出后收藏会回退到这台浏览器存的那份，不会丢。</div>`);
+    body.querySelector("#acctLogout").onclick = logout;
+    return;
+  }
+
+  $("#sName").textContent = "登录 / 注册";
+  $("#sMeta").textContent = "登录后收藏可以跨设备同步";
+  const isLogin = state.acctTab !== "register";
+  body.insertAdjacentHTML("beforeend", `
+    <div class="acct-tabs" id="acctTabs">
+      <button data-t="login" class="${isLogin ? "on" : ""}">登录</button>
+      <button data-t="register" class="${isLogin ? "" : "on"}">注册</button>
+    </div>
+    <div class="add-form">
+      <input id="acctUser" placeholder="用户名（2–20 字，中文 / 字母数字）" autocomplete="username">
+      <input id="acctPass" type="password" placeholder="密码（至少 6 位）"
+             autocomplete="${isLogin ? "current-password" : "new-password"}">
+      <div class="row">
+        <button class="btn-primary" id="acctGo">${isLogin ? "登录" : "注册并登录"}</button>
+      </div>
+    </div>
+    ${isLogin ? "" : `<div class="acct-warn">⚠ <b>密码无法找回，请牢记。</b>
+      没接邮箱，忘了密码只能重新注册一个账号（旧账号的收藏就找不回来了）。</div>`}
+    <div class="acct-tip">
+      · 只要用户名和密码，不用邮箱手机号。<br>
+      · 密码只存加密后的哈希，服务器上没人能还原。<br>
+      · 登录后，本机已有的收藏会自动合并进去。
+    </div>`);
+
+  body.querySelector("#acctTabs").addEventListener("click", e => {
+    const b = e.target.closest("button[data-t]");
+    if(!b) return;
+    state.acctTab = b.dataset.t;
+    renderAccount();
+  });
+
+  const settle = () => {
+    const btn = body.querySelector("#acctGo");
+    if(!btn) return;
+    btn.disabled = false;
+    btn.textContent = isLogin ? "登录" : "注册并登录";
+  };
+
+  const go = async () => {
+    const username = body.querySelector("#acctUser").value.trim();
+    const password = body.querySelector("#acctPass").value;
+    if(!username || !password){ toast("用户名和密码都要填"); return; }
+    const btn = body.querySelector("#acctGo");
+    btn.disabled = true; btn.textContent = "处理中…";
+    try{
+      const r = await fetch(`api/account/${isLogin ? "login" : "register"}`, {
+        method: "POST", headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ username, password }),
+      });
+      const j = await r.json().catch(() => ({}));
+      if(!r.ok){ toast(j.error || "失败"); settle(); return; }
+      state.user = j.username;
+      state.utoken = j.token;
+      localStorage.setItem(LS_UTOK, j.token);
+      mergeFavs(j.favs);
+      save();
+      await syncFavs();
+      renderUserBtn(); renderGrid(); renderAccount();
+      toast(`欢迎，${j.username}`);
+    }catch(e){
+      toast("连不上服务器");
+      settle();
+    }
+  };
+  body.querySelector("#acctGo").onclick = go;
+  body.querySelector("#acctPass").onkeydown = e => { if(e.key === "Enter") go(); };
+  body.querySelector("#acctUser").onkeydown = e => { if(e.key === "Enter") body.querySelector("#acctPass").focus(); };
+}
+
+/* =========================================================
+   管理面板：加游戏分区 / 分区下加角色
+   ---------------------------------------------------------
+   本地模式改的是浏览器里的数据；服务器模式走 /api/admin/mutate，
+   改的是 data/published.json（所有人可见）。
+   ========================================================= */
+async function ensureAdmin(){
+  if(!SERVER.on) return true;
+  if(sessionValid()) return true;
+  return await loginPrompt();
+}
+
+async function mutate(op, payload){
+  if(!SERVER.on) return { local: true };
+  if(!(await ensureAdmin())) return { cancelled: true };
+  try{
+    const r = await fetch("api/admin/mutate", {
+      method: "POST", headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ session: SERVER.session, op, ...payload }),
+    });
+    const j = await r.json().catch(() => ({}));
+    if(r.status === 401){ clearSession(); return { error: "登录过期，重新点「审核」" }; }
+    if(!r.ok) return { error: j.error || "操作失败" };
+    GAMES = j.games || GAMES;
+    state.links = j.links || {};
+    return { ok: true };
+  }catch(e){
+    return { error: "连不上服务器" };
+  }
+}
+
+function renderManage(){
+  const body = $("#sBody");
+  body.innerHTML = "";
+  // 服务器模式下没登录 → 只能"提交申请"，不能直接改
+  const isAdmin = !SERVER.on || sessionValid();
+
+  $("#sName").textContent = isAdmin ? "管理" : "申请添加";
+  $("#sMeta").textContent = isAdmin
+    ? `${GAMES.length} 个分区 · ${GAMES.reduce((n,g)=>n+g.chars.length,0)} 个角色`
+    : "提交后进审核队列，站长通过才上线";
+
+  if(!isAdmin && state.receipt){
+    body.insertAdjacentHTML("beforeend", `
+      <div class="receipt">
+        <b>✓ 已提交，等站长审核</b><br>
+        <span>${state.receipt}</span>
+        <span style="opacity:.55;font-size:11px">　单号 ${state.receiptId || ""}</span>
+      </div>`);
+  }
+
+  if(!isAdmin){
+    body.insertAdjacentHTML("beforeend", `
+      <div class="acct-tip" style="margin:0 0 2px">
+        你提交的内容会进站长的审核队列，<b>通过后才会出现在首页</b>。<br>
+        如果你是站长本人：先点顶栏「审核」登录一次，再回来这里就能直接改。
+      </div>`);
+  }
+
+  body.insertAdjacentHTML("beforeend", `
+    <div class="sec-title">${isAdmin ? "新建游戏分区" : "申请添加游戏分区"}</div>
+    <div class="mgr-add">
+      <input id="gName" placeholder="游戏名，比如：鸣潮">
+      <button id="gAdd">${isAdmin ? "＋ 添加" : "提交申请"}</button>
+    </div>`);
+  const gInput = body.querySelector("#gName");
+  const doAddGame = async () => {
+    const name = gInput.value.trim();
+    if(!name){ toast("名字不能为空"); return; }
+    if(!isAdmin){
+      const r = await submitApplication({ type: "game", gameName: name, chars: [] });
+      if(r.error){ toast(r.error); return; }
+      state.receipt = `分区申请：${name}`;
+      state.receiptId = r.id;
+      gInput.value = "";
+      renderManage(); toast("已提交，等站长审核");
+      return;
+    }
+    if(SERVER.on){
+      const r = await mutate("add_game", { name });
+      if(r.cancelled) return;
+      if(r.error){ toast(r.error); return; }
+    }else{
+      const err = addGame(name);
+      if(err){ toast(err); return; }
+    }
+    gInput.value = "";
+    renderManage(); renderGames(); renderGrid(); toast("分区已添加");
+  };
+  body.querySelector("#gAdd").onclick = doAddGame;
+  gInput.onkeydown = e => { if(e.key === "Enter") doAddGame(); };
+
+  body.insertAdjacentHTML("beforeend", `<div class="sec-title">分区与角色</div>`);
+
+  for(const g of GAMES){
+    const box = document.createElement("div");
+    box.className = "mgr-game";
+    box.innerHTML = `
+      <div class="mgr-head">
+        <span class="dot" style="background:${g.color}"></span>
+        <span class="nm">${g.name}</span>
+        <span class="ct">${g.chars.length} 个角色</span>
+        ${isAdmin ? `<button class="rn" title="改分区名">改名</button><button class="rm">删除分区</button>` : ""}
+      </div>
+      <div class="chips"></div>
+      <div class="mgr-add">
+        <input placeholder="${isAdmin ? "在这个分区加角色，比如：今汐" : "申请添加角色，比如：今汐"}">
+        <button>${isAdmin ? "＋ 添加" : "申请"}</button>
+      </div>`;
+
+    const chips = box.querySelector(".chips");
+    if(!g.chars.length){
+      chips.innerHTML = `<span style="font-size:12px;color:var(--text-faint)">还没有角色</span>`;
+    }
+    for(const name of g.chars){
+      const chip = document.createElement("span");
+      chip.className = "chip";
+      chip.innerHTML = isAdmin
+        ? `${name}<b class="rn" title="改角色名">✎</b><i title="从分区里删掉">×</i>`
+        : `${name}`;
+      if(isAdmin){
+        chip.querySelector(".rn").onclick = async ev => {
+          ev.stopPropagation();
+          const input = prompt(`把「${name}」改名成：`, name);
+          if(input === null) return;
+          const next = input.trim();
+          if(!next || next === name) return;
+          if(SERVER.on){
+            const r = await mutate("rename_char", { gameId: g.id, oldName: name, newName: next });
+            if(r.error){ toast(r.error); return; }
+          }else{
+            const err = renameChar(g.id, name, next);
+            if(err){ toast(err); return; }
+          }
+          renderManage(); renderGames(); renderGrid(); toast("角色已改名");
+        };
+      }
+      if(isAdmin){
+        chip.querySelector("i").onclick = async () => {
+          if(!confirm(`从「${g.name}」删掉「${name}」？\n它已填的配布地址也会一起删。`)) return;
+          if(SERVER.on){
+            const r = await mutate("del_char", { gameId: g.id, name });
+            if(r.cancelled) return;
+            if(r.error){ toast(r.error); return; }
+          }else{
+            delChar(g.id, name);
+          }
+          renderManage(); renderGames(); renderGrid();
+        };
+      }
+      chips.appendChild(chip);
+    }
+
+    if(isAdmin){
+      box.querySelector(".rn").onclick = async () => {
+        const input = prompt(`把分区「${g.name}」改名成：`, g.name);
+        if(input === null) return;
+        const next = input.trim();
+        if(!next || next === g.name) return;
+        if(SERVER.on){
+          const r = await mutate("rename_game", { gameId: g.id, name: next });
+          if(r.error){ toast(r.error); return; }
+        }else{
+          const err = renameGame(g.id, next);
+          if(err){ toast(err); return; }
+        }
+        renderManage(); renderGames(); renderGrid(); toast("分区已改名");
+      };
+      box.querySelector(".rm").onclick = async () => {
+        if(!confirm(`删除整个「${g.name}」分区？\n底下 ${g.chars.length} 个角色和它们的地址都会没。`)) return;
+        if(SERVER.on){
+          const r = await mutate("del_game", { gameId: g.id });
+          if(r.cancelled) return;
+          if(r.error){ toast(r.error); return; }
+        }else{
+          delGame(g.id);
+        }
+        renderManage(); renderGames(); renderGrid();
+      };
+    }
+
+    const input = box.querySelector(".mgr-add input");
+    const doAddChar = async () => {
+      const name = input.value.trim();
+      if(!name){ toast("名字不能为空"); return; }
+      if(!isAdmin){
+        const r = await submitApplication({ type: "char", gameId: g.id, charName: name });
+        if(r.error){ toast(r.error); return; }
+        state.receipt = `角色申请：「${g.name}」下添加「${name}」`;
+        state.receiptId = r.id;
+        input.value = "";
+        renderManage(); toast("已提交，等站长审核");
+        return;
+      }
+      if(SERVER.on){
+        const r = await mutate("add_char", { gameId: g.id, name });
+        if(r.cancelled) return;
+        if(r.error){ toast(r.error); return; }
+      }else{
+        const err = addChar(g.id, name);
+        if(err){ toast(err); return; }
+      }
+      input.value = "";
+      renderManage(); renderGames(); renderGrid(); toast("角色已添加");
+    };
+    box.querySelector(".mgr-add button").onclick = doAddChar;
+    input.onkeydown = e => { if(e.key === "Enter") doAddChar(); };
+
+    body.appendChild(box);
+  }
+
+  if(isAdmin){
+    body.insertAdjacentHTML("beforeend", `
+      <div class="sec-title">备份 / 迁移</div>
+      <div class="mgr-add" style="gap:8px">
+        <button class="btn-ghost" id="mExport" style="flex:1">导出 JSON</button>
+        <button class="btn-ghost" id="mImport" style="flex:1">导入 JSON</button>
+      </div>
+      <div style="font-size:11.5px;color:var(--text-faint);margin-top:7px;line-height:1.7">
+        ${SERVER.on
+          ? "导出的是<b>服务器上</b>的完整数据，含所有分区、角色、配布地址。<br>导入会覆盖线上数据（会先问你要动态码）。"
+          : "导出的是<b>本机浏览器</b>里的数据。<br>导入会覆盖本机数据。"}
+      </div>`);
+    body.querySelector("#mExport").onclick = () => exportData();
+    body.querySelector("#mImport").onclick = () => $("#impFile").click();
+  }
+
+  body.insertAdjacentHTML("beforeend", `
+    <div class="note">
+      ${!SERVER.on
+        ? "现在是<b>本地模式</b>，改动只存在你这个浏览器里，别人看不到。<br>想让别人也看到：用 <b>启动服务.bat</b> 打开网址，再用「数据 → 导入」把这份本地数据导到服务器上。"
+        : (isAdmin
+            ? "你是管理员，上面的改动会<b>直接写到服务器</b>。"
+            : "你不是管理员，这里的「申请」会进审核队列，站长通过后才上线。")}
+    </div>`);
+}
+
+/* =========================================================
+   顶栏交互
+   ========================================================= */
+$("#q").addEventListener("input", e=>{
+  state.q = e.target.value;
+  renderGrid();
+});
+document.addEventListener("keydown", e=>{
+  if(e.key === "/" && document.activeElement !== $("#q")){
+    e.preventDefault(); $("#q").focus();
+  }
+  if(e.key === "Escape") closeSheet();
+});
+
+$("#favBtn").onclick = () => openFav();
+
+/* 分享：手机上拉系统分享面板，电脑上复制一段带文案的链接 */
+const SHARE_TEXT = () => {
+  const chars = GAMES.reduce((n, g) => n + g.chars.length, 0);
+  return `二游 MMD 模型去哪找？这个索引整理了 ${GAMES.length} 个游戏 ${chars} 个角色，`
+       + `官方/同人分开标注，点角色直接跳到作者的配布页 → https://ybslmmd.cn/`;
+};
+
+async function copyText(text){
+  try{
+    if(navigator.clipboard && window.isSecureContext){
+      await navigator.clipboard.writeText(text);
+      return true;
+    }
+  }catch(e){ /* 落到下面的兜底 */ }
+  try{
+    const ta = document.createElement("textarea");
+    ta.value = text;
+    ta.style.cssText = "position:fixed;left:-9999px;top:0";
+    document.body.appendChild(ta);
+    ta.select();
+    const ok = document.execCommand("copy");
+    document.body.removeChild(ta);
+    return ok;
+  }catch(e){ return false; }
+}
+
+$("#shareBtn").onclick = async () => {
+  const text = SHARE_TEXT();
+  if(navigator.share){
+    try{
+      await navigator.share({ title: "二游 MMD 模型导航", text, url: "https://ybslmmd.cn/" });
+      return;
+    }catch(e){ /* 用户取消，退回复制 */ }
+  }
+  const ok = await copyText(text);
+  toast(ok ? "已复制，去粘贴给朋友吧" : "复制失败，手动复制 https://ybslmmd.cn/");
+};
+
+$("#kindSeg").addEventListener("click", e=>{
+  const btn = e.target.closest("button[data-k]");
+  if(!btn) return;
+  state.kind = btn.dataset.k;
+  [...$("#kindSeg").children].forEach(x => x.classList.toggle("on", x === btn));
+  renderGrid();
+});
+
+function syncEditBtn(){ $("#editBtn").classList.toggle("on", state.edit); }
+$("#editBtn").onclick = ()=>{
+  state.edit = !state.edit;
+  syncEditBtn();
+  toast(state.edit ? "编辑模式：点角色可以添加 / 删除配布地址" : "已退出编辑模式");
+  if(sheetMode === "char" && current) renderSheet();
+};
+
+$("#mgrBtn").onclick = ()=> openManage();
+
+function exportData(){
+  const payload = {
+    version: 2,
+    exportedAt: new Date().toISOString(),
+    games: GAMES,
+    links: state.links,
+  };
+  const blob = new Blob([JSON.stringify(payload,null,2)], {type:"application/json"});
+  const a = document.createElement("a");
+  a.href = URL.createObjectURL(blob);
+  a.download = "mmd-hub-data.json";
+  a.click();
+  URL.revokeObjectURL(a.href);
+  toast("已导出 JSON（分区 + 角色 + 地址都在里面）");
+}
+
+let toastTimer;
+function toast(msg){
+  const t = $("#toast");
+  t.textContent = msg;
+  t.classList.add("show");
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(()=>t.classList.remove("show"), 2200);
+}
+
+/* =========================================================
+   深度链接 & 数据导入
+   ========================================================= */
+function applyHash(){
+  const raw = location.hash.replace(/^#\/?/, "");
+  if(!raw) return;
+  if(raw === "manage"){ openManage(); return; }
+  if(raw === "log"){ openLog(); return; }
+  const parts = raw.split("/").map(decodeURIComponent);
+  const gid = parts[0], name = parts.slice(1).join("/");
+  const g = GAMES.find(x => x.id === gid || x.name === gid);
+  if(g && name && g.chars.includes(name)){
+    state.game = g.id;
+    renderGames(); renderGrid();
+    openSheet(g, name);
+  }
+}
+window.addEventListener("hashchange", applyHash);
+
+$("#impFile").onchange = ev => {
+  const file = ev.target.files[0];
+  if(!file) return;
+  const reader = new FileReader();
+  reader.onload = async () => {
+    try{
+      const data = JSON.parse(reader.result);
+      const incoming = data.links || data;
+      if(typeof incoming !== "object") throw new Error("格式不对");
+
+      if(SERVER.on){
+        // 服务器模式：导入的是"线上数据"，要管理员权限
+        if(!confirm("导入会覆盖【服务器上】的分区、角色和地址（所有人可见），继续？")) return;
+        const r = await mutate("import", {
+          games: Array.isArray(data.games) && data.games.length ? data.games : GAMES,
+          links: incoming,
+        });
+        if(r.cancelled) return;
+        if(r.error){ toast(r.error); return; }
+      }else{
+        if(!confirm("导入会覆盖当前浏览器里已存的分区、角色和地址，继续？")) return;
+        if(Array.isArray(data.games) && data.games.length){
+          GAMES = data.games;
+          saveGames();
+        }
+        state.links = incoming;
+        save();
+      }
+
+      renderGames(); renderGrid();
+      if(sheetMode === "manage") renderManage();
+      else if(current) renderSheet();
+      toast(`已导入 ${GAMES.length} 个分区 / ${GAMES.reduce((n,g)=>n+g.chars.length,0)} 个角色`);
+    }catch(err){ toast("导入失败：不是有效的 JSON"); }
+    ev.target.value = "";
+  };
+  reader.readAsText(file);
+};
+
+/* =========================================================
+   服务器模式：提交 → 站长审核 → 上线
+   ---------------------------------------------------------
+   file:// 打开 = 本地模式（数据存浏览器，自己随便改）
+   http:// 打开 = 服务器模式（所有人看同一份，提交要审核）
+   ========================================================= */
+const SERVER = {
+  on: false,
+  session: localStorage.getItem("mmd-hub:session") || "",
+  expires: Number(localStorage.getItem("mmd-hub:session-exp") || 0),
+};
+
+function sessionValid(){
+  return !!SERVER.session && (Date.now() / 1000) < (SERVER.expires - 30);
+}
+
+function clearSession(){
+  SERVER.session = "";
+  SERVER.expires = 0;
+  localStorage.removeItem("mmd-hub:session");
+  localStorage.removeItem("mmd-hub:session-exp");
+}
+
+async function loginPrompt(){
+  const code = prompt(
+    "输入手机验证器里的 6 位动态码\n\n" +
+    "第一次用：跑 server.py 时控制台会打印密钥，\n" +
+    "在 Authenticator（微软/Google 都行）里「手动输入密钥」。\n\n" +
+    "（在本机直接打开时，也可以直接输入静态口令）"
+  );
+  if(!code) return false;
+  const text = code.trim();
+  const body = text.length === 6 && /^\d{6}$/.test(text)
+    ? { code: text }
+    : { token: text };
+  try{
+    const r = await fetch("api/login", {
+      method: "POST", headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(body),
+    });
+    const j = await r.json().catch(() => ({}));
+    if(!r.ok){ toast(j.error || "登录失败"); return false; }
+    SERVER.session = j.session;
+    SERVER.expires = j.expires;
+    localStorage.setItem("mmd-hub:session", j.session);
+    localStorage.setItem("mmd-hub:session-exp", String(j.expires));
+    toast("已登录，8 小时内有效");
+    return true;
+  }catch(e){
+    toast("连不上服务器");
+    return false;
+  }
+}
+
+async function detectServer(){
+  if(location.protocol !== "http:" && location.protocol !== "https:"){
+    SERVER.on = false;
+    return;
+  }
+  try{
+    const r = await fetch("api/data", {cache:"no-store"});
+    if(!r.ok) throw new Error("no api");
+    const d = await r.json();
+    if(!Array.isArray(d.games) || !d.games.length) throw new Error("empty");
+    GAMES = d.games;
+    state.links = d.links || {};
+    SERVER.on = true;
+  }catch(e){
+    SERVER.on = false;
+  }
+}
+
+async function refreshData(){
+  if(!SERVER.on) return;
+  try{
+    const r = await fetch("api/data", {cache:"no-store"});
+    const d = await r.json();
+    GAMES = d.games || GAMES;
+    state.links = d.links || {};
+    renderGames(); renderGrid();
+    if(current) renderSheet();
+  }catch(e){}
+}
+
+function applyMode(){
+  const editBtn = $("#editBtn"), mgrBtn = $("#mgrBtn"), revBtn = $("#reviewBtn");
+  const badge = $("#modeBadge");
+  if(SERVER.on){
+    editBtn.style.display = "";
+    mgrBtn.style.display = "";
+    revBtn.style.display = "";
+    badge.textContent = "在线";
+    badge.title = "服务器模式：所有人看到同一份数据，改动要登录";
+    badge.classList.add("on");
+    pollPending();
+    setInterval(pollPending, 30000);
+  }else{
+    editBtn.style.display = "";
+    mgrBtn.style.display = "";
+    revBtn.style.display = "none";
+    badge.textContent = "本地";
+    badge.title = "本地模式：数据只存在这个浏览器里，别人看不到";
+    badge.classList.remove("on");
+  }
+}
+
+async function pollPending(){
+  try{
+    const r = await fetch("api/stats", {cache:"no-store"});
+    const d = await r.json();
+    const n = d.pending || 0;
+    $("#pendCount").textContent = n ? ` ${n}` : "";
+  }catch(e){}
+}
+
+async function openReview(){
+  if(!SERVER.on){ toast("审核功能要服务器模式（用 启动服务.bat 打开）"); return; }
+  if(!sessionValid()){
+    if(!(await loginPrompt())) return;
+  }
+  sheetMode = "review";
+  current = null;
+  $("#mask").classList.add("show");
+  $("#sheet").classList.add("show");
+  await renderPending();
+}
+
+async function renderPending(){
+  const body = $("#sBody");
+  $("#sName").textContent = "待审核";
+  body.innerHTML = `<div style="color:var(--text-faint);font-size:13px">加载中…</div>`;
+  let data;
+  try{
+    const r = await fetch("api/pending", {
+      cache: "no-store",
+      headers: { "X-Admin-Session": SERVER.session },
+    });
+    if(r.status === 401){
+      clearSession();
+      body.innerHTML = `<div style="color:#ff9a9a;font-size:13px">登录已过期，关掉面板重新点「审核」输入动态码。</div>`;
+      return;
+    }
+    data = await r.json();
+  }catch(e){
+    body.innerHTML = `<div style="color:#ff9a9a;font-size:13px">连不上服务器。</div>`;
+    return;
+  }
+  const list = data.pending || [];
+  $("#sMeta").textContent = `${list.length} 条待审 · 通过后立即对所有人生效`;
+  body.innerHTML = "";
+  if(!list.length){
+    body.innerHTML = `<div style="color:var(--text-faint);font-size:13px;padding:10px 0">目前没有待审核的提交。</div>`;
+    return;
+  }
+  for(const it of list){
+    const p = it.payload || {};
+    const card = document.createElement("div");
+    card.className = "pend";
+
+    if(p.type === "game"){
+      // 分区添加申请
+      const chars = Array.isArray(p.chars) ? p.chars : [];
+      card.innerHTML = `
+        <div class="t">
+          <span class="who">分区添加申请</span>
+          <span class="pill off on">新分区</span>
+          <span class="tagline">${chars.length} 个角色</span>
+        </div>
+        <div class="u" style="font-size:14px;font-weight:600;color:var(--text)">${p.gameName || "?"}</div>
+        ${chars.length ? `<div class="m">角色：${chars.join("、")}</div>` : ""}
+        ${p.note ? `<div class="m">备注：${p.note}</div>` : ""}
+        <div class="m">提交者：${p.submitter || "匿名"}　·　${it.ts || ""}　·　${it.ip || ""}</div>
+        <div class="acts">
+          <button class="ok">✓ 通过并建分区</button>
+          <button class="no">✕ 拒绝</button>
+        </div>`;
+    }else if(p.type === "char"){
+      // 某个分区下添加新角色
+      const game = GAMES.find(g => g.id === p.gameId);
+      card.innerHTML = `
+        <div class="t">
+          <span class="who">添加新角色申请</span>
+          <span class="tagline">在「${game ? game.name : (p.gameName || p.gameId)}」下</span>
+        </div>
+        <div class="u" style="font-size:14px;font-weight:600;color:var(--text)">${p.charName || "?"}</div>
+        ${p.note ? `<div class="m">备注：${p.note}</div>` : ""}
+        <div class="m">提交者：${p.submitter || "匿名"}　·　${it.ts || ""}　·　${it.ip || ""}</div>
+        <div class="acts">
+          <button class="ok">✓ 通过并添加</button>
+          <button class="no">✕ 拒绝</button>
+        </div>`;
+    }else{
+      const game = GAMES.find(g => g.id === p.gameId);
+      card.innerHTML = `
+        <div class="t">
+          <span class="who">${p.charName || "?"}</span>
+          <span class="tagline">${game ? game.name : p.gameId}</span>
+          <span class="pill ${p.linkKind === "official" ? "off" : "has"}">${p.linkKind === "official" ? "官方" : "同人"}</span>
+          <span class="tagline">${p.platform || ""}</span>
+        </div>
+        <div class="u">${p.url || ""}</div>
+        ${p.note ? `<div class="m">备注：${p.note}</div>` : ""}
+        <div class="m">提交者：${p.submitter || "匿名"}　·　${it.ts || ""}　·　${it.ip || ""}</div>
+        <div class="acts">
+          <button class="ok">✓ 通过并上线</button>
+          <button class="no">✕ 拒绝</button>
+        </div>`;
+    }
+
+    card.querySelector(".ok").onclick = () => decide(it.id, "approve", card);
+    card.querySelector(".no").onclick = () => decide(it.id, "reject", card);
+    body.appendChild(card);
+  }
+}
+
+async function decide(id, action, card){
+  const btns = card.querySelectorAll("button");
+  btns.forEach(b => b.disabled = true);
+  try{
+    const r = await fetch("api/decide", {
+      method: "POST", headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ session: SERVER.session, id, action }),
+    });
+    const j = await r.json().catch(() => ({}));
+    if(r.status === 401){ clearSession(); toast("登录过期，重新点「审核」"); return; }
+    if(!r.ok){ toast(j.error || "操作失败"); btns.forEach(b => b.disabled = false); return; }
+    toast(action === "approve" ? "已通过，所有人都能看到这条地址了" : "已拒绝");
+    await renderPending();
+    await refreshData();
+    pollPending();
+  }catch(e){
+    toast("连不上服务器");
+    btns.forEach(b => b.disabled = false);
+  }
+}
+
+$("#reviewBtn").onclick = openReview;
+
+$("#userBtn").onclick = () => {
+  sheetMode = "account";
+  current = null;
+  $("#mask").classList.add("show");
+  $("#sheet").classList.add("show");
+  renderAccount();
+};
+
+/* =========================================================
+   启动
+   ========================================================= */
+(async function boot(){
+  await detectServer();
+  applyMode();
+  renderGames();
+  renderGrid();
+  syncEditBtn();
+  applyHash();
+  if(SERVER.on){
+    refreshData();
+    await accountMe();
+  }else{
+    renderUserBtn();
+  }
+  syncLandingSub();
+})();
+
+/* =========================================================
+   开场页：逐字弹出「欢迎来到御北的小站」
+   ========================================================= */
+const LANDING_TEXT = "欢迎来到御北的小站";
+const LANDING_KEY = "mmd-hub:landed";
+
+function buildLandingTitle(){
+  const el = $("#landingTitle");
+  if(!el) return;
+  el.innerHTML = [...LANDING_TEXT].map((ch, i) =>
+    `<span style="animation-delay:${(0.28 + i * 0.075).toFixed(3)}s">${ch === " " ? "&nbsp;" : ch}</span>`
+  ).join("");
+}
+
+function syncLandingSub(){
+  const el = $("#landingSub");
+  if(!el || !GAMES.length) return;
+  const chars = GAMES.reduce((n, g) => n + g.chars.length, 0);
+  el.textContent = `${GAMES.length} 个分区 · ${chars} 个角色 · 官方与同人分开标注`;
+}
+
+function closeLanding(){
+  const el = $("#landing");
+  if(!el || !el.classList.contains("show")) return;
+  try{ sessionStorage.setItem(LANDING_KEY, "1"); }catch(e){}
+  el.classList.add("out");
+  document.body.classList.remove("landing-open");
+  setTimeout(() => { el.classList.remove("show", "out"); }, 620);
+}
+
+(function initLanding(){
+  const el = $("#landing");
+  if(!el) return;
+  buildLandingTitle();
+  let seen = false;
+  try{ seen = sessionStorage.getItem(LANDING_KEY) === "1"; }catch(e){}
+  if(seen) return;                       // 本次会话看过了，直接进站
+  if(location.hash && location.hash.length > 1) return;   // 带锚点的深链接（#log / #manage）直接进
+  if(/[?&]skip=1/.test(location.search)) return;           // ?skip=1 也能跳过
+
+  el.classList.add("show");
+  el.setAttribute("aria-hidden", "false");
+  document.body.classList.add("landing-open");
+
+  $("#landingGo").onclick = closeLanding;
+  el.addEventListener("click", e => { if(e.target === el) closeLanding(); });
+  document.addEventListener("keydown", e => {
+    if(!el.classList.contains("show")) return;
+    if(e.key === "Escape" || e.key === "Enter" || e.key === " "){ closeLanding(); }
+  });
+})();
+</script>
+</body>
+</html>
