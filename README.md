@@ -74,6 +74,15 @@ python server.py 8000
 
 具体配布地址请在站点上看——那是人工一条条核对出来的。
 
+## 关注作者
+
+- **B 站**：<https://space.bilibili.com/43679850>
+- **抖音**：`yileinaILU77` —— <https://www.douyin.com/search/yileinaILU77>
+- **爱发电**：<https://afdian.com/a/ybsl520>
+- **站点**：<https://ybslmmd.cn/>
+
+如果这个站帮到你，欢迎关注 / 投喂，也欢迎直接来站里提交你找到的配布地址。
+
 ## 免责声明
 
 - 本站只做链接索引，文件都在原作者 / 原平台。
